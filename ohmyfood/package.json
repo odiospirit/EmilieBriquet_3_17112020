@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "reservation restaurant and make menu online",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style/accueil-small-resolution.scss:./style/accueil-small-resolution.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odiospirit/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odiospirit/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/odiospirit/ohmyfood#readme"
+}
