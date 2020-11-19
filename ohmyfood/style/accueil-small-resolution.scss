@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$background-color-primary:#F2F2F2;
+$background-color-secondary:black;
+$font-family-primary:"Roboto", sans-serif;
+$font-family-secondary:"Shrikhand", cursive;
+
+@mixin button 
+{
+    color:white;
+    background: linear-gradient($color-secondary, $color-primary);
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px #F2F2F2;
+}
+
