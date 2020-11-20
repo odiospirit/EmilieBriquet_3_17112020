@@ -1,20 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import "./base/fonts";
+@import "./utils/variables";
+@import "./utils/mixins";
 
 
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
-$background-color-primary:#F2F2F2;
-$background-color-secondary:black;
-$font-family-primary:"Roboto", sans-serif;
-$font-family-secondary:"Shrikhand", cursive;
-
-@mixin button 
+body
 {
-    color:white;
-    background: linear-gradient($color-secondary, $color-primary);
-    border-radius: 50px;
-    box-shadow: 2px 2px 10px #F2F2F2;
+    margin: 0px;
+    font-family: $font-family-primary;
 }
+
+.box-header
+{
+    height: 80px;
+    text-align: center;
+
+    &__logo
+    {
+        width: 30%;
+        margin-top: 20px;
+    }
+
+    &__para
+    {
+        width: 400px;
+        font-size: 0.6em;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+.box-research
+{
+    height: 50px;
+    background-color: darken($background-color-primary, 5%);
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 1px 2px grey;
+
+    &__icon
+    {
+        width: 5%;
+        padding: 15px;
+    }
+
+    &__input
+    {
+        border: none;
+        background-color: darken($background-color-primary, 5%);
+
+        &::placeholder
+        {
+            color: black;
+        }
+    }
+}
+
 

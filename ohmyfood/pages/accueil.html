@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood, page d'accueil</title>
-    <link rel="stylesheet" href="../style/accueil-large-resolution" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
-    <link rel="stylesheet" href="../style/accueil-medium-resolution.scss" media="all and (min-width: 768px) and (max-width: 1199px)"/> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
-    <link rel="stylesheet" href="../style/accueil-small-resolution.scss" media="all and (max-width: 767px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
+    <link rel="stylesheet" href="../style/accueil-large-resolution.css" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
+    <link rel="stylesheet" href="../style/accueil-medium-resolution.css" media="all and (min-width: 451px) and (max-width: 1199px)"/> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
+    <link rel="stylesheet" href="../style/accueil-small-resolution.css" media="all and (max-width: 450px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
 
 </head>
 
@@ -15,160 +15,159 @@
 
     <header>
 
-        <div class="logo-para-header">
+        <div class="box-header">
 
-            <img class="logo" src="../icon-logo/logo.svg" alt="logo_website_ohmyfood"/>
+            <img class="box-header__logo" src="../icon-logo/logo.svg" alt="logo_website_ohmyfood"/>
 
-            <p class="para-header">
+            <p class="box-header__para">
 
-                Ne perdez plus de temps, votre menu de qualité et à votre goût préparé à l'avance, grâce à la commande en ligne.
-
+                Grâce à la commande en ligne, votre menu de qualité et à votre goût préparé à l'avance.
             </p>
         </div>
 
-        <div class="research">
+        <div class="box-research">
 
-            <img class="icon" src="../icon-logo/icon_map.svg" alt="icon_map"/>
+            <img class="box-research__icon" src="../icon-logo/icon_map.svg" alt="icon_map"/>
 
-            <input placeholder="Paris, Belleville"/>
+            <input class="box-research__input" type="text" placeholder="Paris, Belleville"/>
 
         </div>
 
     </header>
 
 
-    <section class="explore">
+    <section class="box-explore">
 
         <div>
 
-            <h1 class="title">Réservez le menu qui vous convient</h1>
+            <h1 class="box-explore__title">Réservez le menu qui vous convient</h1>
 
-            <p class="para">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <p class="box-explore__para">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
         </div>
 
-        <p class="button">Explorer nos restaurants</p>
+        <p class="box-explore__button">Explorer nos restaurants</p>
 
     </section>
 
 
-    <section class="process">
+    <section class="box-process">
 
-        <h1 class="title">Fonctionnement</h1>
+        <h1 class="box-process__title">Fonctionnement</h1>
 
-        <ol class="list">
+        <ol class="box-process__list">
 
-            <li><img class="icon" src="../icon-logo/icon_mobile.svg" alt="icon_mobile"/>choisissez un restaurant</li>
-            <li><img class="icon" src="../icon-logo/icon_list.svg" alt="icon_list"/>Composez votre menu</li>
-            <li><img class="icon" src="../icon-logo/icon_store.svg" alt="icon_store"/>Dégustez au restaurant</li>
+            <li><img class="box-process__list__icon" src="../icon-logo/icon_mobile.svg" alt="icon_mobile"/>choisissez un restaurant</li>
+            <li><img class="box-process__list__icon" src="../icon-logo/icon_list.svg" alt="icon_list"/>Composez votre menu</li>
+            <li><img class="box-process__list__icon" src="../icon-logo/icon_store.svg" alt="icon_store"/>Dégustez au restaurant</li>
 
         </ol>
 
     </section>
 
 
-    <section class="restaurants">
+    <section class="box-restaurants">
 
-        <h1 class="title">Restaurants</h1>
+        <h1 class="box-restaurants__title">Restaurants</h1>
 
-        <div class="la_palette_du_gout"><a href="menu_la_palette_du_gout.html">
+        <div class="box-restaurants__lapalettedugout"><a href="menu_la_palette_du_gout.html">
 
-            <div class="photo_new_button">
+            <div class="box-restaurants__lapalettedugout__image">
 
-                <img class="photo" src="../images/restaurants/la_palette_du_gout.jpg" alt="images_la_palette_du_gout"/>
+                <img class="box-restaurants__lapalettedugout__image__photo" src="../images/restaurants/la_palette_du_gout.jpg" alt="images_la_palette_du_gout"/>
 
-                <p class="new_button">Nouveau</p>
+                <p class="box-restaurants__lapalettedugout__image__newbutton">Nouveau</p>
             
             </div>
 
-            <div>
+            <div class="box-restaurants__lapalettedugout__para">
                     
-                <p>
+                <p class="box-restaurants__lapalettedugout__para__description">
                         
                     La palette du goût</br>
                     Ménilmontant</br>
 
                 </p>
  
-                <img class="icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
+                <img class="box-restaurants__lapalettedugout__para__icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
 
             </div>
 
         </a></div>
 
 
-        <div class="la_note_enchantee"><a href="menu_la _note _enchantee.html">
+        <div class="box-restaurants__lanoteenchantee"><a href="menu_la _note _enchantee.html">
 
-            <div class="photo_new_button">
+            <div class="box-restaurants__lanoteenchantee__image">
 
-                <img class="photo" src="../images/restaurants/la_note_enchantée.jpg" alt="images_la_note_enchantee"/>
+                <img class="box-restaurants__lanoteenchantee__image__photo" src="../images/restaurants/la_note_enchantée.jpg" alt="images_la_note_enchantee"/>
 
-                <p class="new_button">Nouveau</p>
+                <p class="box-restaurants__lanoteenchantee__image__newbutton">Nouveau</p>
             
             </div>
 
-            <div>
+            <div class="box-restaurants__lanoteenchantee__para">
                     
-                <p>
+                <p class="box-restaurants__lanoteenchantee__para__description">
                         
                     La note enchantée</br>
                     Charonne</br>
 
                 </p>
  
-                <img class="icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
+                <img class="box-restaurants__lanoteenchantee__para__icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
 
             </div>
 
         </a></div>
 
 
-        <div class="A_la_française"><a href="menu_a_la_francaise.html">
+        <div class="box-restaurants__alafrançaise"><a href="menu_a_la_francaise.html">
 
-            <div class="photo_new_button">
+            <div class="box-restaurants__alafrançaise__image">
 
-                <img class="photo" src="../images/restaurants/a_la_française.jpg" alt="images_a_la_française"/>
+                <img class="box-restaurants__alafrançaise__image__photo" src="../images/restaurants/a_la_française.jpg" alt="images_a_la_française"/>
 
-                <p class="new_button">Nouveau</p>
+                <p class="box-restaurants__alafrançaise__image__newbutton">Nouveau</p>
                 
             </div>
 
-            <div>
+            <div class="box-restaurants__alafrançaise__para">
                     
-                <p>
+                <p class="box-restaurants__alafrançaise__para__description">
                         
                     A la française</br>
                     Cité Rouge</br>
 
                 </p>
  
-                <img class="icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
+                <img class="box-restaurants__alafrançaise__para__icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
 
             </div>
 
         </a></div>
 
 
-        <div class="le_delice_des_sens"><a href="menu_le_delice_des_sens.html">
+        <div class="box-restaurants__ledelicedessens"><a href="menu_le_delice_des_sens.html">
 
-            <div class="photo_new_button">
+            <div class="box-restaurants__ledelicedessens__image">
 
-                <img class="photo" src="../images/restaurants/le_delice_des_sens.jpg" alt="images_le_delice_des_sens"/>
+                <img class="box-restaurants__ledelicedessens__image__photo" src="../images/restaurants/le_delice_des_sens.jpg" alt="images_le_delice_des_sens"/>
 
-                <p class="new_button">Nouveau</p>
+                <p class="box-restaurants__ledelicedessens__image__newbutton">Nouveau</p>
                 
             </div>
 
-            <div>
+            <div class="box-restaurants__ledelicedessens__para">
                     
-                <p>
+                <p class="box-restaurants__ledelicedessens__para__descrition">
                         
                     Le délice des sens</br>
                     Folie-Méricourt</br>
 
                 </p>
  
-                <img class="icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
+                <img class="box-restaurants__ledelicedessens__para__icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
 
             </div>
 
@@ -179,12 +178,12 @@
 
     <footer>
 
-        <h2>ohmyfood</h2>
+        <h2 class="footer__title">ohmyfood</h2>
 
-        <ul>
+        <ul class="footer__list">
 
-            <li><img class="icon" src="../icon-logo/icon_utensils.svg" alt="icon_ustensils"/>Proposer un restaurant</li>
-            <li><img class="icon" src="../icon-logo/icon_hands.svg" alt="icon_hands"/>Devenir partenaire</li>
+            <li><img class="footer__list__icon" src="../icon-logo/icon_utensils.svg" alt="icon_ustensils"/>Proposer un restaurant</li>
+            <li><img class="footer__list__icon" src="../icon-logo/icon_hands.svg" alt="icon_hands"/>Devenir partenaire</li>
             <li>Mentions légales</li>
             <li><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
 

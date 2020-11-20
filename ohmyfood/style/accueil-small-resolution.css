@@ -1,3 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.box-header {
+  height: 80px;
+  text-align: center;
+}
+
+.box-header__logo {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.box-header__para {
+  width: 400px;
+  font-size: 0.6em;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.box-research {
+  height: 50px;
+  background-color: #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: inset 0px 1px 2px grey;
+          box-shadow: inset 0px 1px 2px grey;
+}
+
+.box-research__icon {
+  width: 5%;
+  padding: 15px;
+}
+
+.box-research__input {
+  border: none;
+  background-color: #e5e5e5;
+}
+
+.box-research__input::-webkit-input-placeholder {
+  color: black;
+}
+
+.box-research__input:-ms-input-placeholder {
+  color: black;
+}
+
+.box-research__input::-ms-input-placeholder {
+  color: black;
+}
+
+.box-research__input::placeholder {
+  color: black;
+}
 /*# sourceMappingURL=accueil-small-resolution.css.map */

@@ -1,0 +1,22 @@
+@mixin button 
+{
+    color:white;
+    background: linear-gradient($color-secondary, $color-primary);
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px #F2F2F2;
+    text-align: center;
+}
+
+@mixin small-box 
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #F2F2F2;
+    display: flex;
+}
+
+@mixin large-box 
+{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #F2F2F2;
+}
