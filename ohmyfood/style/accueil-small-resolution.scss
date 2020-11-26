@@ -11,18 +11,23 @@ body
 
 .box-header
 {
-    height: 80px;
-    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 
     &__logo
     {
-        width: 30%;
+        width: 150px;
         margin-top: 20px;
     }
 
     &__para
     {
-        width: 400px;
+        width: 230px;
+        text-align: center;
         font-size: 0.6em;
         margin: auto;
         margin-top: 10px;
@@ -31,26 +36,108 @@ body
 
 .box-research
 {
-    height: 50px;
-    background-color: darken($background-color-primary, 5%);
+    height: 40px;
+    background-color: darken($background-color-primary, 3%);
+    box-shadow: inset 5px 12px 5px -10px darken($background-color-primary, 25%);
     display: flex;
     justify-content: center;
-    box-shadow: inset 0px 1px 2px grey;
 
     &__icon
     {
-        width: 5%;
-        padding: 15px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 30%;
+        margin-right: 10px;
     }
 
     &__input
     {
+        width: 70%;
         border: none;
-        background-color: darken($background-color-primary, 5%);
+        background-color: darken($background-color-primary, 3%);
+        box-shadow: inset 5px 12px 5px -10px darken($background-color-primary, 25%);
 
         &::placeholder
         {
             color: black;
+        }
+    }
+}
+
+.box-explore
+{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lighten($background-color-primary, 2%);
+
+    &__description
+    {
+        height: 120px;
+        background-color: lighten($background-color-primary, 2%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+
+        &__title
+        {
+            max-width: 250px;
+            text-align: center;
+            margin: 0px;
+        }
+
+        &__para
+        {
+            max-width: 300px;
+            text-align: center;
+            color: darken(#F2F2F2, 50%);
+            font-weight: 100;
+        }
+
+    }
+
+    &__button
+    {
+        @include button;
+    }
+ 
+}
+
+.box-process
+{
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+
+    &__list
+    {
+        padding: 0px;
+        counter-reset: listprocess;
+
+        &__p
+        {
+            @include grey-small-box;
+            margin-bottom: 20px;
+            counter-increment: listprocess;
+
+            &::before
+            {
+                content: counter(listprocess);
+                @include purplelist;
+            }
+
+        }
+
+    
+        &__icon 
+        {
+            margin: 0px 15px;
+            color: darken(#F2F2F2, 50%);
+        
+            
         }
     }
 }

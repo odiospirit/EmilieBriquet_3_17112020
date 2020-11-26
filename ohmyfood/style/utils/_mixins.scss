@@ -1,22 +1,46 @@
 @mixin button 
 {
+    width: 180px;
+    height: 40px;
     color:white;
     background: linear-gradient($color-secondary, $color-primary);
     border-radius: 50px;
-    box-shadow: 2px 2px 10px #F2F2F2;
-    text-align: center;
+    box-shadow: 0px 5px 5px darken($background-color-primary, 15%);
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@mixin small-box 
+
+@mixin grey-small-box 
 {
+    width: 90%;
+    height: 50px;
+    margin: auto;
     background-color: #F2F2F2;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px #F2F2F2;
-    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px darken($background-color-primary, 5%);
+    font-size: 0.8em;
 }
+
+
+@mixin purplelist
+{
+    border: 1px solid $color-primary;
+    padding: 1px 5px;
+    background-color: $color-primary;
+    color: #F2F2F2;
+    border-radius: 10px;
+
+}
+
+
 
 @mixin large-box 
 {
     border-radius: 10px;
     box-shadow: 2px 2px 10px #F2F2F2;
 }
+
+

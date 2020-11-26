@@ -6,43 +6,68 @@ body {
 }
 
 .box-header {
-  height: 80px;
-  text-align: center;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .box-header__logo {
-  width: 30%;
+  width: 150px;
   margin-top: 20px;
 }
 
 .box-header__para {
-  width: 400px;
+  width: 230px;
+  text-align: center;
   font-size: 0.6em;
   margin: auto;
   margin-top: 10px;
 }
 
 .box-research {
-  height: 50px;
-  background-color: #e5e5e5;
+  height: 40px;
+  background-color: #eaeaea;
+  -webkit-box-shadow: inset 5px 12px 5px -10px #b2b2b2;
+          box-shadow: inset 5px 12px 5px -10px #b2b2b2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: inset 0px 1px 2px grey;
-          box-shadow: inset 0px 1px 2px grey;
 }
 
 .box-research__icon {
-  width: 5%;
-  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  margin-right: 10px;
 }
 
 .box-research__input {
+  width: 70%;
   border: none;
-  background-color: #e5e5e5;
+  background-color: #eaeaea;
+  -webkit-box-shadow: inset 5px 12px 5px -10px #b2b2b2;
+          box-shadow: inset 5px 12px 5px -10px #b2b2b2;
 }
 
 .box-research__input::-webkit-input-placeholder {
@@ -59,5 +84,108 @@ body {
 
 .box-research__input::placeholder {
   color: black;
+}
+
+.box-explore {
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7f7f7;
+}
+
+.box-explore__description {
+  height: 120px;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+}
+
+.box-explore__description__title {
+  max-width: 250px;
+  text-align: center;
+  margin: 0px;
+}
+
+.box-explore__description__para {
+  max-width: 300px;
+  text-align: center;
+  color: #737373;
+  font-weight: 100;
+}
+
+.box-explore__button {
+  width: 180px;
+  height: 40px;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 5px 5px #cccccc;
+          box-shadow: 0px 5px 5px #cccccc;
+  font-size: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-process {
+  padding-top: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.box-process__list {
+  padding: 0px;
+  counter-reset: listprocess;
+}
+
+.box-process__list__p {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 5px #e5e5e5;
+          box-shadow: 0px 5px 5px #e5e5e5;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  counter-increment: listprocess;
+}
+
+.box-process__list__p::before {
+  content: counter(listprocess);
+  border: 1px solid #9356DC;
+  padding: 1px 5px;
+  background-color: #9356DC;
+  color: #F2F2F2;
+  border-radius: 10px;
+}
+
+.box-process__list__icon {
+  margin: 0px 15px;
+  color: #737373;
 }
 /*# sourceMappingURL=accueil-small-resolution.css.map */

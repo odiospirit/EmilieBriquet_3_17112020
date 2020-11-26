@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood, page d'accueil</title>
+    <link rel="stylesheet" href="../style/base/fontawesome/css/all.min.css"/>
     <link rel="stylesheet" href="../style/accueil-large-resolution.css" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
     <link rel="stylesheet" href="../style/accueil-medium-resolution.css" media="all and (min-width: 451px) and (max-width: 1199px)"/> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
     <link rel="stylesheet" href="../style/accueil-small-resolution.css" media="all and (max-width: 450px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
@@ -17,7 +18,7 @@
 
         <div class="box-header">
 
-            <img class="box-header__logo" src="../icon-logo/logo.svg" alt="logo_website_ohmyfood"/>
+            <img class="box-header__logo" src="../images/logo.svg" alt="logo_website_ohmyfood"/>
 
             <p class="box-header__para">
 
@@ -27,7 +28,7 @@
 
         <div class="box-research">
 
-            <img class="box-research__icon" src="../icon-logo/icon_map.svg" alt="icon_map"/>
+            <i class="box-research__icon fas fa-map-marker-alt"></i>
 
             <input class="box-research__input" type="text" placeholder="Paris, Belleville"/>
 
@@ -38,11 +39,11 @@
 
     <section class="box-explore">
 
-        <div>
+        <div class="box-explore__description">
 
-            <h1 class="box-explore__title">Réservez le menu qui vous convient</h1>
+            <h1 class="box-explore__description__title">Réservez le menu qui vous convient</h1>
 
-            <p class="box-explore__para">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <p class="box-explore__description__para">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
         </div>
 
@@ -55,13 +56,13 @@
 
         <h1 class="box-process__title">Fonctionnement</h1>
 
-        <ol class="box-process__list">
+        <div class="box-process__list">
 
-            <li><img class="box-process__list__icon" src="../icon-logo/icon_mobile.svg" alt="icon_mobile"/>choisissez un restaurant</li>
-            <li><img class="box-process__list__icon" src="../icon-logo/icon_list.svg" alt="icon_list"/>Composez votre menu</li>
-            <li><img class="box-process__list__icon" src="../icon-logo/icon_store.svg" alt="icon_store"/>Dégustez au restaurant</li>
+            <p class="box-process__list__p"><i class="box-process__list__icon fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+            <p class="box-process__list__p"><i class="box-process__list__icon fas fa-list-ul"></i>Composez votre menu</p>
+            <p class="box-process__list__p"><i class="box-process__list__icon fas fa-store"></i>Dégustez au restaurant</p>
 
-        </ol>
+        </div>
 
     </section>
 
@@ -89,7 +90,7 @@
 
                 </p>
  
-                <img class="box-restaurants__lapalettedugout__para__icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
+                <i class="box-restaurant__lapalettedugout__para__icon far fa-heart"></i>
 
             </div>
 
@@ -115,7 +116,7 @@
 
                 </p>
  
-                <img class="box-restaurants__lanoteenchantee__para__icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
+                <i class="box-restaurant__lanoteenchantee__para__icon far fa-heart"></i>
 
             </div>
 
@@ -141,7 +142,7 @@
 
                 </p>
  
-                <img class="box-restaurants__alafrançaise__para__icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
+                <i class="box-restaurant__alafrancaise__para__icon far fa-heart"></i>
 
             </div>
 
@@ -167,7 +168,7 @@
 
                 </p>
  
-                <img class="box-restaurants__ledelicedessens__para__icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
+                <i class="box-restaurant__ledelicedessens__para__icon far fa-heart"></i>
 
             </div>
 
@@ -182,8 +183,8 @@
 
         <ul class="footer__list">
 
-            <li><img class="footer__list__icon" src="../icon-logo/icon_utensils.svg" alt="icon_ustensils"/>Proposer un restaurant</li>
-            <li><img class="footer__list__icon" src="../icon-logo/icon_hands.svg" alt="icon_hands"/>Devenir partenaire</li>
+            <li><i class="footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
+            <li><i class="footer__list__icon fas fa-hands-helping"></i>Devenir partenaire</li>
             <li>Mentions légales</li>
             <li><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
 

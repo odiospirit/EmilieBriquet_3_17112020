@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu, A la française</title>
+    <link rel="stylesheet" href="../style/base/fontawesome/css/all.min.css"/>
     <link rel="stylesheet" href="../style/menu-large-resolution" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
     <link rel="stylesheet" href="../style/menu-medium-resolution.scss" media="all and (min-width: 768px) and (max-width: 1199px)"/> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
     <link rel="stylesheet" href="../style/menu-small-resolution.scss" media="all and (max-width: 767px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
@@ -18,15 +19,15 @@
 
         <div class="box-header">
 
-            <div class="icon-logo">
+            <div class="box-header__ohmyfood">
 
-                <a href="accueil.html"><img class="icon" src="../icon-logo/icon_arrow.svg" alt="icon_arrow"/></a>
+                <a href="accueil.html"><i class="box-header__ohmyfood__icon fas fa-arrow-left"></i></a>
 
-                <img class="logo" src="../icon-logo/logo.svg" alt="logo_website_ohmyfood"/>
+                <img class="box-header__ohmyfood__logo" src="../images/logo.svg" alt="logo_website_ohmyfood"/>
 
             </div>
 
-            <img class="photo" src="../images/restaurants/a_la_française.jpg" alt="photo_a_la_francaise"/>
+            <img class="box-header__photo" src="../images/restaurants/a_la_française.jpg" alt="photo_a_la_francaise"/>
             
         </div>
 
@@ -35,19 +36,19 @@
 
     <section class="menu">
 
-        <div class="title-icon">
+        <div class="menu__box">
 
-            <h1 class="title">A la française</h1>
+            <h1 class="menu__box__title">A la française</h1>
 
-            <img class="icon" src="../icon-logo/icon_heart.svg" alt="icon_heart"/>
+            <i class="menu__box__icon far fa-heart"></i>
 
         </div>
 
         <div class="starter">
 
-            <h2 class="title">entrées</h2>
+            <h2 class="starter__title">entrées</h2>
 
-            <div class="para">
+            <div class="starter__para">
 
                 <p>
                     <strong>Tartare de poulpe acidulé</strong></br>
@@ -58,7 +59,7 @@
 
             </div>
 
-            <div class="para">
+            <div class="starter__para">
 
                 <p>
                     <strong>Velouté de légumes d'antan</strong></br>
@@ -69,7 +70,7 @@
 
             </div>
 
-            <div class="para">
+            <div class="starter__para">
 
                 <p>
                     <strong>Soupe à l'oignon</strong></br>
@@ -85,9 +86,9 @@
 
         <div class="main">
 
-            <h2 class="title">plats</h2>
+            <h2 class="main__title">plats</h2>
 
-            <div class="para">
+            <div class="main__para">
 
                 <p>
                     <strong>Coquilles Saint-Jacques</strong></br>
@@ -98,7 +99,7 @@
 
             </div>
 
-            <div class="para">
+            <div class="main__para">
 
                 <p>
                     <strong>Magret de canard</strong></br>
@@ -109,7 +110,7 @@
 
             </div>
 
-            <div class="para">
+            <div class="main__para">
 
                 <p>
                     <strong>Pigeonneau d’Ille-et-Vilaine</strong></br>
@@ -126,9 +127,9 @@
 
         <div class="dessert">
 
-            <h2 class="title">desserts</h2>
+            <h2 class="dessert__title">desserts</h2>
 
-            <div class="para">
+            <div class="dessert__para">
 
                 <p>
                     <strong>Pétales de violettes glacés</strong></br>
@@ -139,7 +140,7 @@
 
             </div>
 
-            <div class="para">
+            <div class="dessert__para">
 
                 <p>
                     <strong>Fondant au chocolat</strong></br>
@@ -150,7 +151,7 @@
 
             </div>
 
-            <div class="para">
+            <div class="dessert__para">
 
                 <p>
                     <strong>Millefeuille croustillant</strong></br>
@@ -163,7 +164,7 @@
         
         </div>
 
-        <p class="button">Commander</p>
+        <p class="menu__button">Commander</p>
 
     </section>
 
@@ -171,11 +172,11 @@
     <footer>
 
         <h2>ohmyfood</h2>
+        
+        <ul class="footer__list">
 
-        <ul>
-
-            <li><img class="icon" src="../icon-logo/icon_utensils.svg" alt="icon_ustensils"/>Proposer un restaurant</li>
-            <li><img class="icon" src="../icon-logo/icon_hands.svg" alt="icon_hands"/>Devenir partenaire</li>
+            <li><i class="footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
+            <li><i class="footer__list__icon fas fa-hands-helping"></i>Devenir partenaire</li>
             <li>Mentions légales</li>
             <li><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
 
