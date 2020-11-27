@@ -2,6 +2,37 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 
+h1
+{
+    font-size: 1.2em;
+}
+
+h2
+{
+    font-family: $font-family-secondary;
+}
+
+p
+{
+    font-size: 0.8em;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+strong
+{
+    font-weight: bolder;
+}
+
+span
+{
+    color: darken(#F2F2F2, 60%);
+}
+
 
 body
 {
@@ -11,90 +42,74 @@ body
 
 .box-header
 {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+    height: 77px;
+    text-align: center;
+    padding-top: 20px;
 
     &__logo
     {
-        width: 150px;
-        margin-top: 20px;
+        width: 145px;
+        margin-bottom: 10px;
     }
 
-    &__para
+    &__research
     {
-        width: 230px;
-        text-align: center;
-        font-size: 0.6em;
-        margin: auto;
-        margin-top: 10px;
-    }
-}
-
-.box-research
-{
-    height: 40px;
-    background-color: darken($background-color-primary, 3%);
-    box-shadow: inset 5px 12px 5px -10px darken($background-color-primary, 25%);
-    display: flex;
-    justify-content: center;
-
-    &__icon
-    {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 30%;
-        margin-right: 10px;
-    }
-
-    &__input
-    {
-        width: 70%;
-        border: none;
+        height: 40px;
         background-color: darken($background-color-primary, 3%);
-        box-shadow: inset 5px 12px 5px -10px darken($background-color-primary, 25%);
+        box-shadow: inset 0px 12px 3px -10px darken($background-color-primary, 25%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &::placeholder
+        &__icon
         {
-            color: black;
+            width: 20px;
+            margin-right: 5px;
+        }
+
+        &__input
+        {
+            width: 105px;
+            height: 26px;
+            font-size: 0.9em;
+            font-weight: 500;
+            border: none;
+            text-align: start;
+            background-color: darken($background-color-primary, 3%);
+
+            &::placeholder
+            {
+                color: black;
+            }
         }
     }
 }
 
 .box-explore
 {
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 230px;
     background-color: lighten($background-color-primary, 2%);
 
     &__description
     {
-        height: 120px;
+        height: 115px;
         background-color: lighten($background-color-primary, 2%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 40px;
+        padding-top: 30px;
 
         &__title
         {
-            max-width: 250px;
+            width: 220px;
             text-align: center;
-            margin: 0px;
+            margin: auto;
         }
 
         &__para
         {
-            max-width: 300px;
+            width: 230px;
+            margin: 10px auto;
             text-align: center;
-            color: darken(#F2F2F2, 50%);
-            font-weight: 100;
+            color: darken(#F2F2F2, 60%);
+            font-weight: 400;
         }
 
     }
@@ -108,38 +123,143 @@ body
 
 .box-process
 {
-    padding-top: 20px;
-    width: 90%;
-    margin: auto;
+    height: 290px;
+    margin-top: 30px;
+
+    &__title
+    {
+        width: 250px;
+        margin: 20px auto;
+        padding-left: 20px;
+    }
 
     &__list
     {
-        padding: 0px;
+        width: 220px;
+        margin: auto;
         counter-reset: listprocess;
 
         &__p
         {
-            @include grey-small-box;
-            margin-bottom: 20px;
+            @include greysmallbox;
             counter-increment: listprocess;
 
             &::before
             {
                 content: counter(listprocess);
                 @include purplelist;
+                position: relative;
+                right: 10px;
             }
 
         }
 
-    
         &__icon 
         {
-            margin: 0px 15px;
+            margin: 0px 10px 0px 5px;
             color: darken(#F2F2F2, 50%);
-        
-            
         }
     }
 }
 
+.box-restaurants
+{
+    height: 970px;
+    background-color: $background-color-primary;
+    padding-top: 20px;
+
+    &__title
+    {
+        width: 270px;
+        margin: 20px auto;
+        padding-left: 20px;
+    }
+
+    &__lapalettedugout, &__lanoteenchantee, &__alafrançaise, &__ledelicedessens
+    {
+        @include largebox;
+
+        &__image
+        {
+            @include boximage;
+
+            &__photo
+            {
+                @include boxphoto;
+            }
+
+            &__newbutton
+            {
+                @include newbutton;
+            }
+        }
+
+        &__para
+        {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__description
+            {
+                line-height: 20px;
+            }
+
+            &__icon
+            {
+                height: 30px;
+                color: darken(#F2F2F2, 60%);
+            }
+        }
+    }
+}
+
+.box-footer
+{
+    background-color: $background-color-secondary;
+    color: white;
+    font-weight: 500;
+    font-size: 0.7em;
+
+    &__title
+    {
+        width: 270px;;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    &__list
+    {
+        width: 270px;
+        height: 100px;
+        margin: auto;
+        list-style-type: none;
+        padding: 10px 0px;
+        
+        &__li
+        {
+            width: 270px;
+            line-height: 20px;
+            
+            a
+            {
+                color: white;
+            }
+        }
+
+        &__icon
+        {
+            margin-right: 15px;
+        }
+
+        &__iconhands
+        {
+            margin-right: 10px;
+        }
+
+    }
+
+}
 

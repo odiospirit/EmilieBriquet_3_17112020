@@ -6,31 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood, page d'accueil</title>
     <link rel="stylesheet" href="../style/base/fontawesome/css/all.min.css"/>
-    <link rel="stylesheet" href="../style/accueil-large-resolution.css" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
-    <link rel="stylesheet" href="../style/accueil-medium-resolution.css" media="all and (min-width: 451px) and (max-width: 1199px)"/> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
+   <!-- <link rel="stylesheet" href="../style/accueil-large-resolution.css" media="all and (min-width: 1200px)"/> --> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
+    <!-- <link rel="stylesheet" href="../style/accueil-medium-resolution.css" media="all and (min-width: 451px) and (max-width: 1199px)"/> --> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
     <link rel="stylesheet" href="../style/accueil-small-resolution.css" media="all and (max-width: 450px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
 
 </head>
 
 <body>
 
-    <header>
+    <header class="box-header">
 
-        <div class="box-header">
+        <img class="box-header__logo" src="../images/logo.svg" alt="logo_website_ohmyfood"/>
 
-            <img class="box-header__logo" src="../images/logo.svg" alt="logo_website_ohmyfood"/>
+        <div class="box-header__research">
 
-            <p class="box-header__para">
+            <i class="box-header__research__icon fas fa-map-marker-alt"></i>
 
-                Grâce à la commande en ligne, votre menu de qualité et à votre goût préparé à l'avance.
-            </p>
-        </div>
-
-        <div class="box-research">
-
-            <i class="box-research__icon fas fa-map-marker-alt"></i>
-
-            <input class="box-research__input" type="text" placeholder="Paris, Belleville"/>
+            <input class="box-header__research__input" type="text" placeholder="Paris, Belleville"/>
 
         </div>
 
@@ -85,12 +77,12 @@
                     
                 <p class="box-restaurants__lapalettedugout__para__description">
                         
-                    La palette du goût</br>
-                    Ménilmontant</br>
+                    <strong>La palette du goût</br></strong>
+                    <span>Ménilmontant</br></span>
 
                 </p>
  
-                <i class="box-restaurant__lapalettedugout__para__icon far fa-heart"></i>
+                <i class="box-restaurants__lapalettedugout__para__icon far fa-heart"></i>
 
             </div>
 
@@ -111,12 +103,12 @@
                     
                 <p class="box-restaurants__lanoteenchantee__para__description">
                         
-                    La note enchantée</br>
-                    Charonne</br>
+                    <strong>La note enchantée</br></strong>
+                    <span>Charonne</br></span>
 
                 </p>
  
-                <i class="box-restaurant__lanoteenchantee__para__icon far fa-heart"></i>
+                <i class="box-restaurants__lanoteenchantee__para__icon far fa-heart"></i>
 
             </div>
 
@@ -137,12 +129,12 @@
                     
                 <p class="box-restaurants__alafrançaise__para__description">
                         
-                    A la française</br>
-                    Cité Rouge</br>
+                    <strong>À la française</br></strong>
+                    <span>Cité Rouge</br></span>
 
                 </p>
  
-                <i class="box-restaurant__alafrancaise__para__icon far fa-heart"></i>
+                <i class="box-restaurants__alafrançaise__para__icon far fa-heart"></i>
 
             </div>
 
@@ -163,12 +155,12 @@
                     
                 <p class="box-restaurants__ledelicedessens__para__descrition">
                         
-                    Le délice des sens</br>
-                    Folie-Méricourt</br>
+                    <strong>Le délice des sens</br></strong> 
+                    <span>Folie-Méricourt</br></span>
 
                 </p>
  
-                <i class="box-restaurant__ledelicedessens__para__icon far fa-heart"></i>
+                <i class="box-restaurants__ledelicedessens__para__icon far fa-heart"></i>
 
             </div>
 
@@ -177,16 +169,16 @@
     </section>
 
 
-    <footer>
+    <footer class="box-footer">
 
-        <h2 class="footer__title">ohmyfood</h2>
+        <h2 class="box-footer__title">ohmyfood</h2>
 
-        <ul class="footer__list">
+        <ul class="box-footer__list">
 
-            <li><i class="footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
-            <li><i class="footer__list__icon fas fa-hands-helping"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
+            <li class="box-footer__list__li"><i class="box-footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
+            <li class="box-footer__list__li"><i class="box-footer__list__iconhands fas fa-hands-helping"></i>Devenir partenaire</li>
+            <li class="box-footer__list__li">Mentions légales</li>
+            <li class="box-footer__list__li"><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
 
         </ul>
 

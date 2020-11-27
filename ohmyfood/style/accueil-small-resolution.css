@@ -1,145 +1,129 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+span {
+  color: #595959;
+}
+
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
 }
 
 .box-header {
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 77px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .box-header__logo {
-  width: 150px;
-  margin-top: 20px;
+  width: 145px;
+  margin-bottom: 10px;
 }
 
-.box-header__para {
-  width: 230px;
-  text-align: center;
-  font-size: 0.6em;
-  margin: auto;
-  margin-top: 10px;
-}
-
-.box-research {
+.box-header__research {
   height: 40px;
   background-color: #eaeaea;
-  -webkit-box-shadow: inset 5px 12px 5px -10px #b2b2b2;
-          box-shadow: inset 5px 12px 5px -10px #b2b2b2;
+  -webkit-box-shadow: inset 0px 12px 3px -10px #b2b2b2;
+          box-shadow: inset 0px 12px 3px -10px #b2b2b2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.box-research__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
-  margin-right: 10px;
 }
 
-.box-research__input {
-  width: 70%;
+.box-header__research__icon {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.box-header__research__input {
+  width: 105px;
+  height: 26px;
+  font-size: 0.9em;
+  font-weight: 500;
   border: none;
+  text-align: start;
   background-color: #eaeaea;
-  -webkit-box-shadow: inset 5px 12px 5px -10px #b2b2b2;
-          box-shadow: inset 5px 12px 5px -10px #b2b2b2;
 }
 
-.box-research__input::-webkit-input-placeholder {
+.box-header__research__input::-webkit-input-placeholder {
   color: black;
 }
 
-.box-research__input:-ms-input-placeholder {
+.box-header__research__input:-ms-input-placeholder {
   color: black;
 }
 
-.box-research__input::-ms-input-placeholder {
+.box-header__research__input::-ms-input-placeholder {
   color: black;
 }
 
-.box-research__input::placeholder {
+.box-header__research__input::placeholder {
   color: black;
 }
 
 .box-explore {
-  height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 230px;
   background-color: #f7f7f7;
 }
 
 .box-explore__description {
-  height: 120px;
+  height: 115px;
   background-color: #f7f7f7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .box-explore__description__title {
-  max-width: 250px;
+  width: 220px;
   text-align: center;
-  margin: 0px;
+  margin: auto;
 }
 
 .box-explore__description__para {
-  max-width: 300px;
+  width: 230px;
+  margin: 10px auto;
   text-align: center;
-  color: #737373;
-  font-weight: 100;
+  color: #595959;
+  font-weight: 400;
 }
 
 .box-explore__button {
   width: 180px;
   height: 40px;
   color: white;
+  margin: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
   -webkit-box-shadow: 0px 5px 5px #cccccc;
           box-shadow: 0px 5px 5px #cccccc;
-  font-size: 0.8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,30 +133,52 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 500;
 }
 
 .box-process {
-  padding-top: 20px;
-  width: 90%;
-  margin: auto;
+  height: 290px;
+  margin-top: 30px;
+}
+
+.box-process__title {
+  width: 250px;
+  margin: 20px auto;
+  padding-left: 20px;
 }
 
 .box-process__list {
-  padding: 0px;
+  width: 220px;
+  margin: auto;
   counter-reset: listprocess;
 }
 
 .box-process__list__p {
-  width: 90%;
+  width: 230px;
   height: 50px;
   margin: auto;
   background-color: #F2F2F2;
   border-radius: 15px;
   -webkit-box-shadow: 0px 5px 5px #e5e5e5;
           box-shadow: 0px 5px 5px #e5e5e5;
-  font-size: 0.8em;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
   counter-increment: listprocess;
+}
+
+.box-process__list__p:hover {
+  background-color: #f2eafb;
+  -webkit-box-shadow: 0px 5px 5px #b2b2b2;
+          box-shadow: 0px 5px 5px #b2b2b2;
 }
 
 .box-process__list__p::before {
@@ -182,10 +188,130 @@ body {
   background-color: #9356DC;
   color: #F2F2F2;
   border-radius: 10px;
+  position: relative;
+  right: 10px;
 }
 
 .box-process__list__icon {
-  margin: 0px 15px;
+  margin: 0px 10px 0px 5px;
   color: #737373;
+}
+
+.box-restaurants {
+  height: 970px;
+  background-color: #F2F2F2;
+  padding-top: 20px;
+}
+
+.box-restaurants__title {
+  width: 270px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.box-restaurants__lapalettedugout, .box-restaurants__lanoteenchantee, .box-restaurants__alafrançaise, .box-restaurants__ledelicedessens {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px #F2F2F2;
+          box-shadow: 2px 2px 10px #F2F2F2;
+  background-color: white;
+  margin: 20px auto;
+}
+
+.box-restaurants__lapalettedugout__image, .box-restaurants__lanoteenchantee__image, .box-restaurants__alafrançaise__image, .box-restaurants__ledelicedessens__image {
+  width: 100%;
+  height: 70%;
+}
+
+.box-restaurants__lapalettedugout__image__photo, .box-restaurants__lanoteenchantee__image__photo, .box-restaurants__alafrançaise__image__photo, .box-restaurants__ledelicedessens__image__photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.box-restaurants__lapalettedugout__image__newbutton, .box-restaurants__lanoteenchantee__image__newbutton, .box-restaurants__alafrançaise__image__newbutton, .box-restaurants__ledelicedessens__image__newbutton {
+  width: 50px;
+  height: 20px;
+  position: relative;
+  left: 170px;
+  bottom: 150px;
+  border: 1px solid #99E2D0;
+  border-radius: 2px;
+  padding: 1px 10px;
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-restaurants__lapalettedugout__para, .box-restaurants__lanoteenchantee__para, .box-restaurants__alafrançaise__para, .box-restaurants__ledelicedessens__para {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box-restaurants__lapalettedugout__para__description, .box-restaurants__lanoteenchantee__para__description, .box-restaurants__alafrançaise__para__description, .box-restaurants__ledelicedessens__para__description {
+  line-height: 20px;
+}
+
+.box-restaurants__lapalettedugout__para__icon, .box-restaurants__lanoteenchantee__para__icon, .box-restaurants__alafrançaise__para__icon, .box-restaurants__ledelicedessens__para__icon {
+  height: 30px;
+  color: #595959;
+}
+
+.box-footer {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 0.7em;
+}
+
+.box-footer__title {
+  width: 270px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.box-footer__list {
+  width: 270px;
+  height: 100px;
+  margin: auto;
+  list-style-type: none;
+  padding: 10px 0px;
+}
+
+.box-footer__list__li {
+  width: 270px;
+  line-height: 20px;
+}
+
+.box-footer__list__li a {
+  color: white;
+}
+
+.box-footer__list__icon {
+  margin-right: 15px;
+}
+
+.box-footer__list__iconhands {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=accueil-small-resolution.css.map */
