@@ -4,7 +4,7 @@
   "description": "reservation restaurant and make menu online",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ../style/accueil-small-resolution.scss:../style/accueil-small-resolution.css"
+    "sass": "sass --watch ../style/homepage-small-resolution.scss:../style/homepage-small-resolution.css"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,44 @@
+.box-header
+{
+    height: 77px;
+    text-align: center;
+    padding-top: 20px;
+
+    &__logo
+    {
+        width: 145px;
+        margin-bottom: 10px;
+    }
+
+    &__research
+    {
+        height: 40px;
+        background-color: darken($background-color-primary, 3%);
+        box-shadow: inset 0px 12px 3px -10px darken($background-color-primary, 25%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__icon
+        {
+            width: 20px;
+            margin-right: 5px;
+        }
+
+        &__input
+        {
+            width: 105px;
+            height: 26px;
+            font-size: 0.9em;
+            font-weight: 500;
+            border: none;
+            text-align: start;
+            background-color: darken($background-color-primary, 3%);
+
+            &::placeholder
+            {
+                color: black;
+            }
+        }
+    }
+}

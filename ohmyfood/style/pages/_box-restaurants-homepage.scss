@@ -1,0 +1,52 @@
+.box-restaurants
+{
+    height: 970px;
+    background-color: $background-color-primary;
+    padding-top: 20px;
+
+    &__title
+    {
+        width: 250px;
+        margin: 20px auto;
+    }
+
+    &__lapalettedugout, &__lanoteenchantee, &__alafrançaise, &__ledelicedessens
+    {
+        @include largebox;
+
+        &__image
+        {
+            @include boximage;
+
+            &__photo
+            {
+                @include boxphoto;
+            }
+
+            &__newbutton
+            {
+                @include newbutton;
+            }
+        }
+
+        &__para
+        {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__description
+            {
+                line-height: 20px;
+            }
+
+            &__icon
+            {
+                height: 30px;
+                color: darken(#F2F2F2, 60%);
+            }
+        }
+    }
+}

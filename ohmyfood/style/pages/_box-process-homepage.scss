@@ -1,0 +1,39 @@
+.box-process
+{
+    height: 290px;
+    margin-top: 30px;
+
+    &__title
+    {
+        width: 250px;
+        margin: 20px auto;
+    }
+
+    &__list
+    {
+        width: 250px;
+        margin: auto;
+        counter-reset: listprocess;
+
+        &__p
+        {
+            @include greysmallbox;
+            counter-increment: listprocess;
+
+            &::before
+            {
+                content: counter(listprocess);
+                @include purplelist;
+                position: relative;
+                right: 10px;
+            }
+
+        }
+
+        &__icon 
+        {
+            margin: 0px 10px 0px 5px;
+            color: darken(#F2F2F2, 50%);
+        }
+    }
+}

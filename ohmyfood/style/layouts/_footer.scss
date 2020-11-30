@@ -1,0 +1,46 @@
+.box-footer
+{
+    background-color: $background-color-secondary;
+    color: white;
+    font-weight: 500;
+    font-size: 0.7em;
+
+    &__title
+    {
+        width: 250px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    &__list
+    {
+        width: 250px;
+        height: 100px;
+        margin: auto;
+        list-style-type: none;
+        padding: 10px 0px;
+        
+        &__li
+        {
+            width: 270px;
+            line-height: 20px;
+            
+            a
+            {
+                color: white;
+            }
+        }
+
+        &__icon
+        {
+            margin-right: 15px;
+        }
+
+        &__iconhands
+        {
+            margin-right: 10px;
+        }
+
+    }
+
+}

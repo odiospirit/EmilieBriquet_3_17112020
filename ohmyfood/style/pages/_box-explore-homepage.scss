@@ -1,0 +1,35 @@
+.box-explore
+{
+    height: 230px;
+    background-color: lighten($background-color-primary, 2%);
+
+    &__description
+    {
+        height: 115px;
+        background-color: lighten($background-color-primary, 2%);
+        padding-top: 30px;
+
+        &__title
+        {
+            width: 220px;
+            text-align: center;
+            margin: auto;
+        }
+
+        &__para
+        {
+            width: 230px;
+            margin: 10px auto;
+            text-align: center;
+            color: darken(#F2F2F2, 60%);
+            font-weight: 400;
+        }
+
+    }
+
+    &__button
+    {
+        @include button;
+    }
+ 
+}
