@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu, la note enchantée</title>
     <link rel="stylesheet" href="../style/base/fontawesome/css/all.min.css"/>
-    <link rel="stylesheet" href="../style/menu-large-resolution" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
-    <link rel="stylesheet" href="../style/menu-medium-resolution.scss" media="all and (min-width: 768px) and (max-width: 1199px)"/> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
-    <link rel="stylesheet" href="../style/menu-small-resolution.scss" media="all and (max-width: 767px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
+    <!-- <link rel="stylesheet" href="../style/scss/menu-large-resolution.css" media="all and (min-width: 1200px)"/> --> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
+    <!-- <link rel="stylesheet" href="../style/scss/menu-medium-resolution.css" media="all and (min-width: 768px) and (max-width: 1199px)"/> --> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
+    <link rel="stylesheet" href="../style/scss/menu-small-resolution.css" media="all and (max-width: 767px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
 
 </head>
 
@@ -19,73 +19,73 @@
 
         <div class="box-header">
 
-            <div class="box-header__ohmyfood">
+            <a href="homepage.html"><i class="box-header__icon fas fa-arrow-left"></i></a>
 
-                <a href="accueil.html"><i class="box-header__ohmyfood__icon fas fa-arrow-left"></i></a>
-
-                <img class="box-header__ohmyfood__logo" src="../images/logo.svg" alt="logo_website_ohmyfood"/>
-
-            </div>
-
-            <img class="box-header__photo" src="../images/restaurants/la_note_enchantée.jpg" alt="photo_la_note_enchantee"/>
+            <img class="box-header__logo" src="../images/logo.svg" alt="logo_website_ohmyfood"/>
             
         </div>
 
     </header>
 
 
-    <section class="menu">
+    <section class="box-menu">
 
-        <div class="menu__box">
+        <div class="box-menu__restaurants">
 
-            <h1 class="menu__box__title">La note enchantée</h1>
+            <img class="box-menu__restaurants__photorestaurant" src="../images/restaurants/la_note_enchantée.jpg" alt="photo_a_la_francaise"/>
 
-            <i class="menu__box__icon far fa-heart"></i>
+            <div class="box-menu__restaurants__infos">
+
+                <h1 class="box-menu__restaurants__infos__title">La note enchantée</h1>
+
+                <i class="box-menu__restaurants__infos__icon far fa-heart"></i>
+            
+            </div>
 
         </div>
 
-        <div class="starter">
+        <div class="box-menu__starter">
 
-            <h2 class="starter__title">entrées</h2>
+            <h1 class="box-menu__starter__title">entrées</h1>
 
-            <div class="starter__para">
+            <div class="box-menu__starter__para">
 
                 <p>
                     <strong>Ravioles de foie gras</strong></br>
-                    Accompagnés de leur crème à la truffe</br>
+                    <span>Accompagnés de leur crème à la truffe</span></br>
                 </p>
 
                 <strong>25€</strong>
 
             </div>
 
-            <div class="starter__para">
+            <div class="box-menu__starter__para">
 
                 <p>
                     <strong>Caviar osciètre</strong></br>
-                    Sur blini à la farine de blé noir</br>
+                    <span>Sur blini à la farine de blé noir</span></br>
                 </p>
 
                 <strong>35€</strong>
 
             </div>
 
-            <div class="starter__para">
+            <div class="box-menu__starter__para">
 
                 <p>
                     <strong>Homard et espuma de potiron</strong></br>
-                    Mariné aux zestes d'orange</br>
+                    <span>Mariné aux zestes d'orange</span></br>
                 </p>
 
                 <strong>20€</strong>
 
             </div>
 
-            <div class="starter__para">
+            <div class="box-menu__starter__para">
 
                 <p>
                     <strong>Foie gras de canard cuit entier</strong></br>
-                    Confiture de figue et pain toasté</br>
+                    <span>Confiture de figue et pain toasté</span></br>
                 </p>
 
                 <strong>35€</strong>
@@ -95,37 +95,37 @@
         </div>
 
 
-        <div class="main">
+        <div class="box-menu__main">
 
-            <h2 class="main__title">plats</h2>
+            <h1 class="box-menu__main__title">plats</h1>
 
-            <div class="main__para">
+            <div class="box-menu__main__para">
 
                 <p>
                     <strong>Noix de coquilles Saint-Jacques</strong></br>
-                    Sur lit de purée de céleri-rave</br>
+                    <span>Sur lit de purée de céleri-rave</span></br>
                 </p>
 
                 <strong>40€</strong>
 
             </div>
 
-            <div class="main__para">
+            <div class="box-menu__main__para">
 
                 <p>
                     <strong>Langoustine poêlée</strong></br>
-                    Purée de patate douce</br>
+                    <span>Purée de patate douce</span></br>
                 </p>
 
                 <strong>35€</strong>
 
             </div>
 
-            <div class="main__para">
+            <div class="box-menu__main__para">
 
                 <p>
                     <strong>Mijoté de queue de boeuf</strong></br>
-                    Et riz sauvage aux zestes de citron</br>
+                    <span>Et riz sauvage aux zestes de citron</span></br>
                 </p>
 
                 <strong>44€</strong>
@@ -136,37 +136,37 @@
 
 
 
-        <div class="dessert">
+        <div class="box-menu__dessert">
 
-            <h2 class="dessert__title">desserts</h2>
+            <h1 class="box-menu__dessert__title">desserts</h1>
 
-            <div class="dessert__para">
+            <div class="box-menu__dessert__para">
 
                 <p>
                     <strong>Macaron noisette et chocolat</strong></br>
-                    Glace au caramel brun et sel de Guérande</br>
+                    <span>Glace au caramel brun et sel de Guérande</span></br>
                 </p>
 
                 <strong>18€</strong>
 
             </div>
 
-            <div class="dessert__para">
+            <div class="box-menu__dessert__para">
 
                 <p>
                     <strong>Baba au rhum revisité</strong></br>
-                    Avec son coulis de citron</br>
+                    <span>Avec son coulis de citron</span></br>
                 </p>
 
                 <strong>22€</strong>
 
             </div>
 
-            <div class="dessert__para">
+            <div class="box-menu__dessert__para">
 
                 <p>
                     <strong>Tarte au citron meringuée</strong></br>
-                    Déstructurée</br>
+                    <span>Déstructurée</span></br>
                 </p>
 
                 <strong>23€</strong>
@@ -175,19 +175,19 @@
         
         </div>
 
-        <p class="menu__button">Commander</p>
+        <p class="box-menu__button">Commander</p>
 
     </section>
 
 
-    <footer>
+    <footer class="box-footer">
 
-        <h2>ohmyfood</h2>
+        <h2 class="box-footer__title">ohmyfood</h2>
 
-        <ul class="footer__list">
+        <ul class="box-footer__list">
 
-            <li><i class="footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
-            <li><i class="footer__list__icon fas fa-hands-helping"></i>Devenir partenaire</li>
+            <li><i class="box-footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
+            <li><i class="box-footer__list__icon fas fa-hands-helping"></i>Devenir partenaire</li>
             <li>Mentions légales</li>
             <li><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
 

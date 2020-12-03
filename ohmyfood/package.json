@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "reservation restaurant and make menu online",
   "main": "index.js",
-  "scripts": {
-    "sass": "sass --watch ../style/homepage-small-resolution.scss:../style/homepage-small-resolution.css"
+  "scripts": 
+  {
+    "sass": "sass --watch ../style/homepage-small-resolution.scss:../style/homepage-small-resolution.css", 
+    "sass2": "sass --watch ../style/menu-small-resolution.scss:../style/menu-small-resolution.css"
   },
   "repository": {
     "type": "git",

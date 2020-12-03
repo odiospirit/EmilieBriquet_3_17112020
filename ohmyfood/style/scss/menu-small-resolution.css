@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+p {
+  font-size: 0.8em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+span {
+  color: #595959;
+}
+
+h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.box-footer {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 0.7em;
+}
+
+.box-footer__title {
+  width: 250px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.box-footer__list {
+  width: 250px;
+  height: 100px;
+  margin: auto;
+  list-style-type: none;
+  padding: 10px 0px;
+}
+
+.box-footer__list__li {
+  width: 270px;
+  line-height: 20px;
+}
+
+.box-footer__list__li a {
+  color: white;
+}
+
+.box-footer__list__icon {
+  margin-right: 15px;
+}
+
+.box-footer__list__iconhands {
+  margin-right: 10px;
+}
+
+span {
+  font-size: 0.9em;
+}
+
+p + strong {
+  font-size: 0.7em;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 7px;
+}
+
+.box-header {
+  width: 250px;
+  height: 40px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box-header__icon {
+  width: 60px;
+}
+
+.box-header__logo {
+  width: 145px;
+}
+
+.box-menu {
+  width: 100%;
+  height: 1100px;
+  background-color: #f7f7f7;
+}
+
+.box-menu__restaurants {
+  width: 100%;
+  height: 215px;
+}
+
+.box-menu__restaurants__photorestaurant {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+}
+
+.box-menu__restaurants__infos {
+  width: 100%;
+  height: 50px;
+  background-color: #f7f7f7;
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 160px;
+}
+
+.box-menu__restaurants__infos__precisions {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box-menu__restaurants__infos__precisions__title {
+  width: 93%;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3em;
+  padding-top: 25px;
+  margin: 0px;
+  margin-left: 5px;
+}
+
+.box-menu__restaurants__infos__precisions__icon {
+  width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+}
+
+.box-menu__starter, .box-menu__main, .box-menu__dessert {
+  width: 90%;
+  height: 270px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.box-menu__starter__title, .box-menu__main__title, .box-menu__dessert__title {
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #595959;
+  border-bottom: 2px solid #99E2D0;
+  padding: 10px 0px 5px 0px;
+  margin-left: 5px;
+}
+
+.box-menu__starter__para, .box-menu__main__para, .box-menu__dessert__para {
+  width: 95%;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px #d9d9d9;
+          box-shadow: 0px 0px 10px #d9d9d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  margin-bottom: 10px;
+  padding: 0px 15px 0px 10px;
+  display: flex;
+}
+
+.box-menu__button {
+  width: 180px;
+  height: 40px;
+  color: white;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 5px 5px #cccccc;
+          box-shadow: 0px 5px 5px #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=menu-small-resolution.css.map */

@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
@@ -89,6 +89,21 @@
     font-weight: 500;
     display: flex;
     align-items: center;
+}
+
+@mixin whitesmallbox 
+{
+    width: 95%;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px darken($background-color-primary, 10%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 0px 15px 0px 10px;
 }
 
 

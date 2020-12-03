@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu, A la française</title>
     <link rel="stylesheet" href="../style/base/fontawesome/css/all.min.css"/>
-    <link rel="stylesheet" href="../style/menu-large-resolution" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
-    <link rel="stylesheet" href="../style/menu-medium-resolution.scss" media="all and (min-width: 768px) and (max-width: 1199px)"/> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
-    <link rel="stylesheet" href="../style/menu-small-resolution.scss" media="all and (max-width: 767px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
+    <!-- <link rel="stylesheet" href="../style/scss/menu-large-resolution.css" media="all and (min-width: 1200px)"/> --> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
+    <!-- <link rel="stylesheet" href="../style/scss/menu-medium-resolution.css" media="all and (min-width: 768px) and (max-width: 1199px)"/> --> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
+    <link rel="stylesheet" href="../style/scss/menu-small-resolution.css" media="all and (max-width: 767px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
 
 </head>
 
@@ -19,62 +19,66 @@
 
         <div class="box-header">
 
-            <div class="box-header__ohmyfood">
+            <a href="homepage.html"><i class="box-header__icon fas fa-arrow-left"></i></a>
 
-                <a href="accueil.html"><i class="box-header__ohmyfood__icon fas fa-arrow-left"></i></a>
-
-                <img class="box-header__ohmyfood__logo" src="../images/logo.svg" alt="logo_website_ohmyfood"/>
-
-            </div>
-
-            <img class="box-header__photo" src="../images/restaurants/a_la_française.jpg" alt="photo_a_la_francaise"/>
+            <img class="box-header__logo" src="../images/logo.svg" alt="logo_website_ohmyfood"/>
             
         </div>
 
     </header>
 
 
-    <section class="menu">
+    <section class="box-menu">
 
-        <div class="menu__box">
+        <div class="box-menu__restaurants">
 
-            <h1 class="menu__box__title">A la française</h1>
+            <img class="box-menu__restaurants__photorestaurant" src="../images/restaurants/a_la_française.jpg" alt="photo_a_la_francaise"/>
 
-            <i class="menu__box__icon far fa-heart"></i>
+            <div class="box-menu__restaurants__infos">
+
+                <div class="box-menu__restaurants__infos__precisions">
+
+                    <h1 class="box-menu__restaurants__infos__precisions__title">À la française</h1>
+
+                    <i class="box-menu__restaurants__infos__precisions__icon far fa-heart"></i>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="starter">
+        <div class="box-menu__starter">
 
-            <h2 class="starter__title">entrées</h2>
+            <h1 class="box-menu__starter__title">entrées</h1>
 
-            <div class="starter__para">
+            <div class="box-menu__starter__para">
 
                 <p>
                     <strong>Tartare de poulpe acidulé</strong></br>
-                    Aux zestes d'orange</br>
+                    <span>Aux zests d'orange</span></br>
                 </p>
 
                 <strong>25€</strong>
 
             </div>
 
-            <div class="starter__para">
+            <div class="box-menu__starter__para">
 
                 <p>
                     <strong>Velouté de légumes d'antan</strong></br>
-                    Carotte, panais, topinambour</br>
+                    <span>Carotte, panais, topinambour</span></br>
                 </p>
 
                 <strong>35€</strong>
 
             </div>
 
-            <div class="starter__para">
+            <div class="box-menu__starter__para">
 
                 <p>
                     <strong>Soupe à l'oignon</strong></br>
-                    Revisitée</br>
+                    <span>Revisitée</span></br>
                 </p>
 
                 <strong>20€</strong>
@@ -84,37 +88,37 @@
         </div>
 
 
-        <div class="main">
+        <div class="box-menu__main">
 
-            <h2 class="main__title">plats</h2>
+            <h1 class="box-menu__main__title">plats</h1>
 
-            <div class="main__para">
+            <div class="box-menu__main__para">
 
                 <p>
                     <strong>Coquilles Saint-Jacques</strong></br>
-                    Accompagnées d'une purée de panais</br>
+                    <span>Accompagnées d'une purée de panais</span></br>
                 </p>
 
                 <strong>40€</strong>
 
             </div>
 
-            <div class="main__para">
+            <div class="box-menu__main__para">
 
                 <p>
                     <strong>Magret de canard</strong></br>
-                    Et parmentier de pommes de terre</br>
+                    <span>Et parmentier de pommes de terres</span></br>
                 </p>
 
                 <strong>35€</strong>
 
             </div>
 
-            <div class="main__para">
+            <div class="box-menu__main__para">
 
                 <p>
                     <strong>Pigeonneau d’Ille-et-Vilaine</strong></br>
-                    Sur son lit de gnocchis aux légumes</br>
+                    <span>Sur son lit de gnocchis aux légumes</span></br>
                 </p>
 
                 <strong>44€</strong>
@@ -125,37 +129,37 @@
 
 
 
-        <div class="dessert">
+        <div class="box-menu__dessert">
 
-            <h2 class="dessert__title">desserts</h2>
+            <h1 class="box-menu__dessert__title">desserts</h1>
 
-            <div class="dessert__para">
+            <div class="box-menu__dessert__para">
 
                 <p>
                     <strong>Pétales de violettes glacés</strong></br>
-                    Et purée de noisettes</br>
+                    <span>Et purée de noisettes</span></br>
                 </p>
 
                 <strong>18€</strong>
 
             </div>
 
-            <div class="dessert__para">
+            <div class="box-menu__dessert__para">
 
                 <p>
                     <strong>Fondant au chocolat</strong></br>
-                    Revisité</br>
+                    <span>Revisité</span></br>
                 </p>
 
                 <strong>22€</strong>
 
             </div>
 
-            <div class="dessert__para">
+            <div class="box-menu__dessert__para">
 
                 <p>
                     <strong>Millefeuille croustillant</strong></br>
-                    Myrtilles et pâte d’amande</br>
+                    <span>Myrtilles et pâte d’amande</span></br>
                 </p>
 
                 <strong>23€</strong>
@@ -164,21 +168,21 @@
         
         </div>
 
-        <p class="menu__button">Commander</p>
+        <p class="box-menu__button">Commander</p>
 
     </section>
 
 
-    <footer>
+    <footer class="box-footer">
 
-        <h2>ohmyfood</h2>
-        
-        <ul class="footer__list">
+        <h2 class="box-footer__title">ohmyfood</h2>
 
-            <li><i class="footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
-            <li><i class="footer__list__icon fas fa-hands-helping"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
+        <ul class="box-footer__list">
+
+            <li class="box-footer__list__li"><i class="box-footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
+            <li class="box-footer__list__li"><i class="box-footer__list__iconhands fas fa-hands-helping"></i>Devenir partenaire</li>
+            <li class="box-footer__list__li">Mentions légales</li>
+            <li class="box-footer__list__li"><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
 
         </ul>
 
