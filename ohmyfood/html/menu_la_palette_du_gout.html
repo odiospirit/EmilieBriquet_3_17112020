@@ -15,13 +15,17 @@
 
 <body>
 
-    <header>
+    <header class="box-header">
 
-        <div class="box-header">
+        <div class="box-header__icon">
 
-            <a href="homepage.html"><i class="box-header__icon fas fa-arrow-left"></i></a>
+            <a href="homepage.html"><i class="fas fa-arrow-left"></i></a>
 
-            <img class="box-header__logo" src="../images/logo.svg" alt="logo_website_ohmyfood"/>
+        </div>
+
+        <div class="box-header__logo">
+
+            <img src="../images/logo.svg" alt="logo_website_ohmyfood"/>
 
         </div>
 
@@ -32,13 +36,17 @@
 
         <div class="box-menu__restaurants">
 
-            <img class="box-menu__restaurants__photorestaurants" src="../images/restaurants/la_palette_du_gout.jpg" alt="photo_la_palette_du_gout"/>
+            <img class="box-menu__restaurants__photorestaurant" src="../images/restaurants/la_palette_du_gout.jpg" alt="photo_la_palette_du_gout"/>
             
             <div class="box-menu__restaurants__infos">
 
-                <h1 class="box-menu__restaurants__infos__title">La palette du goût</h1>
+                <div class="box-menu__restaurants__infos__precisions">
 
-                <i class="box-menu__restaurants__infos__icon far fa-heart"></i>
+                    <h1 class="box-menu__restaurants__infos__precisions__title">La palette du goût</h1>
+
+                    <i class="box-menu__restaurants__infos__precisions__icon far fa-heart"></i>
+
+                </div>    
 
             </div>
 
@@ -51,7 +59,7 @@
             <div class="box-menu__starter__para">
 
                 <p>
-                    <strong>Fricassée de'escargots</strong></br>
+                    <strong>Fricassée d'escargots</strong></br>
                     <span>Au piment d'espelette</span></br>
                 </p>
 
@@ -72,7 +80,7 @@
 
             <div class="box-menu__starter__para">
 
-                <p>
+                <p class="box-menu__starter__para--spanellipsis">
                     <strong>Oeuf au plat</strong></br>
                     <span>Assaisonné à la truffe sur lit de caviar</span></br>
                 </p>
@@ -88,25 +96,31 @@
 
             <h1 class="box-menu__main__title">plats</h1>
 
-            <div class="main__para">
+            <div class="box-menu__main__para">
 
-                <p>
-                    <strong>Filet de boeuf aux herbes</strong></br>
-                    <span>Accompagné de sa ribambelle de légumes</span></br>
-                </p>
+                <strong>Filet de boeuf aux herbes</strong></br>
 
-                <strong>40€</strong>
+                <div class="box-menu__main__para__precisions">
+
+                    <p>Accompagné de sa ribambelle de légumes</p>
+
+                    <strong>40€</strong>
+                    
+                </div>
 
             </div>
 
             <div class="box-menu__main__para">
 
-                <p>
-                    <strong>Parmentier de queue de boeuf</strong></br>
-                    <span>À la truffe noire sur sa purée de panais</span></br>
-                </p>
+                <strong>Parmentier de queue de boeuf</strong></br>
+                
+                <div class="box-menu__main__para__precisions">
+                
+                        <p>À la truffe noire sur sa purée de panais</p>
 
-                <strong>35€</strong>
+                        <strong>35€</strong>
+
+                </div>
 
             </div>
 
@@ -175,10 +189,10 @@
 
         <ul class="box-footer__list">
 
-            <li><i class="box-footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
-            <li><i class="box-footer__list__icon fas fa-hands-helping"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
+            <li class="box-footer__list__li"><i class="box-footer__list__icon fas fa-utensils"></i>Proposer un restaurant</li>
+            <li class="box-footer__list__li"><i class="box-footer__list__iconhands fas fa-hands-helping"></i>Devenir partenaire</li>
+            <li class="box-footer__list__li">Mentions légales</li>
+            <li class="box-footer__list__li"><a href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
 
         </ul>
 

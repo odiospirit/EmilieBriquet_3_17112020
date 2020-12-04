@@ -1,56 +1,66 @@
 @import "../base/fonts";
 @import "../utils/variables";
 @import "../utils/mixins";
-@import "../layouts/p";
 @import "../layouts/a";
-@import "../layouts/strong";
-@import "../layouts/span";
 @import "../layouts/h2";
 @import "../layouts/body";
 @import "../layouts/footer";
 
-
-span
-    {
-        font-size: 0.9em;
-    }
-
-p + strong
+strong
 {
     font-size: 0.7em;
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 7px;
+    padding-left: 10px;
+    color: black;
 }
+
+p
+{
+    padding-left: 10px;
+    color: darken(#F2F2F2, 60%);
+    font-size: 0.6em;
+}
+
+
+
 
 .box-header
 {
-    width: 250px;
+    width: 90%;
     height: 40px;
     margin: auto;
     display: flex;
-    align-items: center;
     padding-top: 10px;
     margin-bottom: 10px;
         
 
     &__icon
     {
-        width: 60px;
+        width: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     &__logo
     {
-        width: 145px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img
+        {
+            width: 145px;
+        }
     }
 }
 
 .box-menu
 {
     width: 100%;
-    height: 1100px;
+    height: auto;
     background-color: #f7f7f7;
+    padding-bottom: 50px;
 
     &__restaurants
     {
@@ -99,6 +109,7 @@ p + strong
                     justify-content: center;
                     align-items: center;
                     padding-top: 25px;
+                    margin-right: 5px;
                 }
 
             }
@@ -109,7 +120,7 @@ p + strong
     &__starter, &__main, &__dessert
     {
         width: 90%;
-        height: 270px;
+        height: auto;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -131,7 +142,36 @@ p + strong
         &__para
         {
             @include whitesmallbox;
-            display: flex;
+
+            &__precisions
+            {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0px;
+
+                p
+                {
+                    width: 200px;
+                }
+
+                strong
+                {
+                    min-width: 20%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    font-size: 0.9em;
+                }       
+            }
+
+            &--spanellipsis
+            {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 169px;
+            }
         }
     }
 
