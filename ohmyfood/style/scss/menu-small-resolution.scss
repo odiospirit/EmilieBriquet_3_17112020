@@ -6,21 +6,6 @@
 @import "../layouts/body";
 @import "../layouts/footer";
 
-strong
-{
-    font-size: 0.7em;
-    padding-left: 10px;
-    color: black;
-}
-
-p
-{
-    padding-left: 10px;
-    color: darken(#F2F2F2, 60%);
-    font-size: 0.6em;
-}
-
-
 
 
 .box-header
@@ -143,6 +128,29 @@ p
         {
             @include whitesmallbox;
 
+            strong
+            {
+                font-size: 0.7em;
+                padding-left: 10px;
+                margin-top: 10px;
+            }
+
+            &--hidden
+            {
+                width: 120px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                padding: 2px 0px;
+            }
+
+            &--size
+            {
+                width: 150px;
+                line-height: 12px;
+            }
+
+
             &__precisions
             {
                 width: 90%;
@@ -152,7 +160,55 @@ p
 
                 p
                 {
-                    width: 200px;
+                    margin: 0px;
+                    font-size: 0.6em;
+                    color: darken(#F2F2F2, 60%);
+                    width: 250px;
+                    line-height: 12px;
+                    padding-left: 10px;
+                    margin-bottom: 10px;
+                }
+
+                &--width
+                {
+                    max-width: 160px;
+                }
+
+                &--lineheight
+                {
+                    padding-top: 3px;
+                }
+
+                strong
+                {
+                    min-width: 15%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    font-size: 0.7em;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                } 
+            }
+                
+            &--ellipsis
+            {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0px;
+
+                p
+                {
+                    margin: 0px;
+                    font-size: 0.6em;
+                    color: darken(#F2F2F2, 60%);
+                    width: 145px;
+                    line-height: 12px;
+                    padding-left: 10px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
 
                 strong
@@ -161,19 +217,17 @@ p
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
-                    font-size: 0.9em;
-                }       
+                    font-size: 0.7em;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                } 
+
             }
 
-            &--spanellipsis
-            {
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                width: 169px;
-            }
         }
+
     }
+    
 
     &__button
     {
