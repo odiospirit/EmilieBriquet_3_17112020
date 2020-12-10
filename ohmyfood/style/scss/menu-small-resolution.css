@@ -212,13 +212,13 @@ body {
 }
 
 .box-menu__starter__para strong, .box-menu__main__para strong, .box-menu__dessert__para strong {
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding-left: 10px;
   margin-top: 10px;
 }
 
 .box-menu__starter__para--hidden, .box-menu__main__para--hidden, .box-menu__dessert__para--hidden {
-  width: 120px;
+  width: 142px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -238,12 +238,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0px;
+  margin: 6px 0px 0px 0px;
 }
 
 .box-menu__starter__para__precisions p, .box-menu__main__para__precisions p, .box-menu__dessert__para__precisions p {
   margin: 0px;
-  font-size: 0.6em;
+  font-size: 0.65em;
   color: #595959;
   width: 250px;
   line-height: 12px;
@@ -252,7 +252,7 @@ body {
 }
 
 .box-menu__starter__para__precisions--width, .box-menu__main__para__precisions--width, .box-menu__dessert__para__precisions--width {
-  max-width: 160px;
+  max-width: 170px;
 }
 
 .box-menu__starter__para__precisions--lineheight, .box-menu__main__para__precisions--lineheight, .box-menu__dessert__para__precisions--lineheight {
@@ -260,19 +260,19 @@ body {
 }
 
 .box-menu__starter__para__precisions strong, .box-menu__main__para__precisions strong, .box-menu__dessert__para__precisions strong {
-  min-width: 15%;
+  min-width: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-size: 0.7em;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: 0px 0px 10px 0px;
+  padding-left: 0px;
 }
 
 .box-menu__starter__para--ellipsis, .box-menu__main__para--ellipsis, .box-menu__dessert__para--ellipsis {
@@ -283,16 +283,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0px;
+  margin: 6px 0px 0px 0px;
 }
 
 .box-menu__starter__para--ellipsis p, .box-menu__main__para--ellipsis p, .box-menu__dessert__para--ellipsis p {
   margin: 0px;
-  font-size: 0.6em;
+  font-size: 0.7em;
   color: #595959;
-  width: 145px;
+  width: 164px;
   line-height: 12px;
   padding-left: 10px;
+  padding-bottom: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -308,10 +309,11 @@ body {
           justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end;
-  font-size: 0.7em;
+          align-items: end;
+  font-size: 0.8em;
   margin-top: 0px;
   margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .box-menu__button {

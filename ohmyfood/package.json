@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": 
   {
-    "sass": "sass --watch ../style/homepage-small-resolution.scss:../style/homepage-small-resolution.css", 
-    "sass2": "sass --watch ../style/menu-small-resolution.scss:../style/menu-small-resolution.css"
+    "sass": "sass --watch ../style/scss/homepage-small-resolution.scss:../style/scss/homepage-small-resolution.css", 
+    "sass2": "sass --watch ../style/scss/menu-small-resolution.scss:../style/scss/menu-small-resolution.css",
+    "prefix": "postcss ../style/scss/homepage-small-resolution.css --use autoprefixer -d ../style/scss/prefixed"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserlist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/odiospirit/ohmyfood/issues"
   },

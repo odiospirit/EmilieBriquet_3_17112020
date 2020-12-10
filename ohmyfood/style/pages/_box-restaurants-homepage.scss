@@ -39,13 +39,27 @@
 
             &__description
             {
+                display: flex;
+                flex-direction: column;
                 line-height: 20px;
+                
             }
 
             &__icon
             {
+                width: 10%;
                 height: 30px;
-                color: darken(#F2F2F2, 60%);
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                
+
+                &--heartfull
+                {   
+                    background:linear-gradient($color-secondary, $color-primary);
+                }
+        
+                
             }
         }
     }

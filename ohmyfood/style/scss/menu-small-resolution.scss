@@ -130,14 +130,14 @@
 
             strong
             {
-                font-size: 0.7em;
+                font-size: 0.8em;
                 padding-left: 10px;
                 margin-top: 10px;
             }
 
             &--hidden
             {
-                width: 120px;
+                width: 142px;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
@@ -156,12 +156,12 @@
                 width: 90%;
                 display: flex;
                 justify-content: space-between;
-                margin: 0px;
+                margin: 6px 0px 0px 0px;
 
                 p
                 {
                     margin: 0px;
-                    font-size: 0.6em;
+                    font-size: 0.65em;
                     color: darken(#F2F2F2, 60%);
                     width: 250px;
                     line-height: 12px;
@@ -171,7 +171,7 @@
 
                 &--width
                 {
-                    max-width: 160px;
+                    max-width: 170px;
                 }
 
                 &--lineheight
@@ -181,13 +181,13 @@
 
                 strong
                 {
-                    min-width: 15%;
+                    min-width: 10%;
                     display: flex;
                     justify-content: flex-end;
-                    align-items: center;
+                    align-items: flex-end;
                     font-size: 0.7em;
-                    margin-top: 0px;
-                    margin-bottom: 10px;
+                    margin: 0px 0px 10px 0px;
+                    padding-left: 0px;
                 } 
             }
                 
@@ -196,16 +196,17 @@
                 width: 90%;
                 display: flex;
                 justify-content: space-between;
-                margin: 0px;
+                margin: 6px 0px 0px 0px;
 
                 p
                 {
                     margin: 0px;
-                    font-size: 0.6em;
+                    font-size: 0.7em;
                     color: darken(#F2F2F2, 60%);
-                    width: 145px;
+                    width: 164px;
                     line-height: 12px;
                     padding-left: 10px;
+                    padding-bottom: 5px;
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
@@ -216,10 +217,11 @@
                     min-width: 20%;
                     display: flex;
                     justify-content: flex-end;
-                    align-items: flex-end;
-                    font-size: 0.7em;
+                    align-items: end;
+                    font-size: 0.8em;
                     margin-top: 0px;
                     margin-bottom: 10px;
+                    padding-bottom: 5px;
                 } 
 
             }

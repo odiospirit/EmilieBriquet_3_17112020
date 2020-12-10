@@ -267,12 +267,33 @@ body {
 }
 
 .box-restaurants__lapalettedugout__para__description, .box-restaurants__lanoteenchantee__para__description, .box-restaurants__alafrançaise__para__description, .box-restaurants__ledelicedessens__para__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   line-height: 20px;
 }
 
 .box-restaurants__lapalettedugout__para__icon, .box-restaurants__lanoteenchantee__para__icon, .box-restaurants__alafrançaise__para__icon, .box-restaurants__ledelicedessens__para__icon {
+  width: 10%;
   height: 30px;
-  color: #595959;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.box-restaurants__lapalettedugout__para__icon--heartfull, .box-restaurants__lanoteenchantee__para__icon--heartfull, .box-restaurants__alafrançaise__para__icon--heartfull, .box-restaurants__ledelicedessens__para__icon--heartfull {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .box-footer {
