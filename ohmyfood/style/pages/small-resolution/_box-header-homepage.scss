@@ -13,8 +13,8 @@
     &__research
     {
         height: 40px;
-        background-color: darken($background-color-primary, 3%);
-        box-shadow: inset 0px 12px 3px -10px darken($background-color-primary, 25%);
+        background-color: #eaeaea;
+        box-shadow: inset 0px 12px 3px -10px darken(#eaeaea, 12%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -33,11 +33,16 @@
             font-weight: 500;
             border: none;
             text-align: start;
-            background-color: darken($background-color-primary, 3%);
+            background-color: #eaeaea;
 
             &::placeholder
             {
-                color: black;
+                color: #353535;
+            }
+
+            &:focus
+            {
+                outline-style: none;
             }
         }
     }

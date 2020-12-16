@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood, page d'accueil</title>
     <link rel="stylesheet" href="../style/base/fontawesome/css/all.min.css"/>
-   <!-- <link rel="stylesheet" href="../style/scss/homepage-large-resolution.css" media="all and (min-width: 1200px)"/> --> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
+    <link rel="stylesheet" href="../style/scss/large-resolution/homepage.css" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
     <!-- <link rel="stylesheet" href="../style/scss/homepage-medium-resolution.css" media="all and (min-width: 451px) and (max-width: 1199px)"/> --> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
-    <link rel="stylesheet" href="../style/scss/homepage-small-resolution.css" media="all and (max-width: 450px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
+    <link rel="stylesheet" href="../style/scss/small-resolution/homepage.css" media="all and (max-width: 450px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
 
 </head>
 
 <body>
+
+    <div class="body__loader"><i class="body__loader__icon fas fa-utensils"></i><p class="body__loader__para">Loading</p></div>
 
     <header class="box-header">
 
@@ -50,10 +52,26 @@
 
         <div class="box-process__list">
 
-            <p class="box-process__list__p"><i class="box-process__list__icon fas fa-mobile-alt"></i>Choisissez un restaurant</p>
-            <p class="box-process__list__p"><i class="box-process__list__icon fas fa-list-ul"></i>Composez votre menu</p>
-            <p class="box-process__list__p"><i class="box-process__list__icon fas fa-store"></i>Dégustez au restaurant</p>
+            <i class="box-process__list__icon fas fa-mobile-alt"></i>
 
+            <p class="box-process__list__p">Choisissez un restaurant</p>
+
+        </div>
+
+        <div class="box-process__list">
+                
+            <i class="box-process__list__icon fas fa-list-ul"></i>
+                
+            <p class="box-process__list__p">Composez votre menu</p>
+            
+        </div>
+
+        <div class="box-process__list">
+                
+            <i class="box-process__list__icon fas fa-store"></i>
+                
+            <p class="box-process__list__p">Dégustez au restaurant</p>
+            
         </div>
 
     </section>
@@ -84,9 +102,9 @@
 
                 <div class="box-restaurants__lapalettedugout__para__icon">
                 
-                    <i class="box-restaurants__lapalettedugout__para__icon--heartempty far fa-heart"></i>
+                    <i class="box-restaurants__lapalettedugout__para__icon__heartempty far fa-heart"></i>
 
-                    <i class="box-restaurants__lapalettedugout__para__icon--heartfull fas fa-heart"></i>
+                    <i class="box-restaurants__lapalettedugout__para__icon__heartfull fas fa-heart"></i>
 
                 </div>
 
@@ -113,34 +131,46 @@
                     <span>Charonne</span>
 
                 </p>
+
+                <div class="box-restaurants__lanoteenchantee__para__icon">
  
-                <i class="box-restaurants__lanoteenchantee__para__icon fas fa-heart"></i>
+                    <i class="box-restaurants__lanoteenchantee__para__icon__heartempty far fa-heart"></i>
+
+                    <i class="box-restaurants__lanoteenchantee__para__icon__heartfull fas fa-heart"></i>
+
+                </div>
 
             </div>
 
         </a></div>
 
 
-        <div class="box-restaurants__alafrançaise"><a href="menu_a_la_francaise.html">
+        <div class="box-restaurants__alafrancaise"><a href="menu_a_la_francaise.html">
 
-            <div class="box-restaurants__alafrançaise__image">
+            <div class="box-restaurants__alafrancaise__image">
 
-                <img class="box-restaurants__alafrançaise__image__photo" src="../images/restaurants/a_la_francaise.jpg" alt="images_a_la_francaise"/>
+                <img class="box-restaurants__alafrancaise__image__photo" src="../images/restaurants/a_la_francaise.jpg" alt="images_a_la_francaise"/>
 
-                <p class="box-restaurants__alafrançaise__image__newbutton">Nouveau</p>
+                <p class="box-restaurants__alafrancaise__image__newbutton">Nouveau</p>
                 
             </div>
 
-            <div class="box-restaurants__alafrançaise__para">
+            <div class="box-restaurants__alafrancaise__para">
                     
-                <p class="box-restaurants__alafrançaise__para__description">
+                <p class="box-restaurants__alafrancaise__para__description">
                         
                     <strong>À la française</strong>
                     <span>Cité Rouge</span>
 
                 </p>
+
+                <div class="box-restaurants__alafrancaise__para__icon">
  
-                <i class="box-restaurants__alafrançaise__para__icon fas fa-heart"></i>
+                    <i class="box-restaurants__alafrancaise__para__icon__heartempty far fa-heart"></i>
+
+                    <i class="box-restaurants__alafrancaise__para__icon__heartfull fas fa-heart"></i>
+
+                </div>
 
             </div>
 
@@ -165,8 +195,14 @@
                     <span>Folie-Méricourt</span>
 
                 </p>
+
+                <div class="box-restaurants__ledelicedessens__para__icon">
  
-                <i class="box-restaurants__ledelicedessens__para__icon fas fa-heart"></i>
+                    <i class="box-restaurants__ledelicedessens__para__icon__heartempty far fa-heart"></i>
+
+                    <i class="box-restaurants__ledelicedessens__para__icon__heartfull fas fa-heart"></i>
+
+                </div>
 
             </div>
 
@@ -189,7 +225,6 @@
         </ul>
 
     </footer>
-
 
 </body>
 

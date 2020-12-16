@@ -5,9 +5,14 @@
   "main": "index.js",
   "scripts": 
   {
-    "sass": "sass --watch ../style/scss/homepage-small-resolution.scss:../style/scss/homepage-small-resolution.css", 
-    "sass2": "sass --watch ../style/scss/menu-small-resolution.scss:../style/scss/menu-small-resolution.css",
-    "prefix": "postcss ../style/scss/homepage-small-resolution.css --use autoprefixer -d ../style/scss/prefixed"
+    "sass-small-homepage": "sass --watch ../style/scss/small-resolution/homepage.scss:../style/scss/small-resolution/homepage.css", 
+    "sass-small-menu": "sass --watch ../style/scss/small-resolution/menu.scss:../style/scss/small-resolution/menu.css",
+    "sass-large-homepage": "sass --watch ../style/scss/large-resolution/homepage.scss:../style/scss/large-resolution/homepage.css", 
+    "sass-large-menu": "sass --watch ../style/scss/large-resolution/menu.scss:../style/scss/large-resolution/menu.css",
+    "prefix-small-homepage": "postcss ../style/scss/small-resolution/homepage.css --use autoprefixer -d ../style/scss/prefixed",
+    "prefix-small-menu": "postcss ../style/scss/small-resolution/menu.css --use autoprefixer -d ../style/scss/prefixed",
+    "prefix-large-homepage": "postcss ../style/scss/large-resolution/homepage.css --use autoprefixer -d ../style/scss/prefixed",
+    "prefix-large-menu": "postcss ../style/scss/large-resolution/menu.css --use autoprefixer -d ../style/scss/prefixed"
   },
   "repository": {
     "type": "git",

@@ -1,12 +1,12 @@
 .box-explore
 {
     height: 230px;
-    background-color: lighten($background-color-primary, 2%);
+    background-color: $background-color-primary;
 
     &__description
     {
         height: 115px;
-        background-color: lighten($background-color-primary, 2%);
+        background-color: $background-color-primary;
         padding-top: 30px;
 
         &__title
@@ -21,7 +21,7 @@
             width: 230px;
             margin: 10px auto;
             text-align: center;
-            color: darken(#F2F2F2, 60%);
+            color: #4d4d4d;
             font-weight: 400;
         }
 

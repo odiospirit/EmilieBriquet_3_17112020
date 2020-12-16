@@ -1,0 +1,38 @@
+.box-process /*counter initialized to 0 on this parent element*/
+{
+    height: 290px;
+    margin-top: 30px;
+    counter-reset: listprocess;
+
+    &__title
+    {
+        width: 270px;
+        margin: 20px auto;
+    }
+
+    &__list
+    {
+        width: 250px;
+        margin: auto;
+        @include greysmallbox;
+        
+
+        &::before /*counter applicated before list element with increment on each list element*/
+        {
+            content: counter(listprocess);
+            counter-increment: listprocess;
+            @include purplelist;
+            position: relative;
+            right: 10px;
+        }
+
+        &__icon 
+        {
+            width: 30px;
+            padding-left: 10px;
+            color: #7e7e7e;
+        }
+    
+    }
+        
+}
