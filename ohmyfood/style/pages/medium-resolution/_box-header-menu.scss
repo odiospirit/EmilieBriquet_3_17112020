@@ -1,0 +1,32 @@
+
+.box-header
+{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    padding-top: 10px;
+    margin-bottom: 10px;
+        
+
+    &__icon
+    {
+        width: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__logo
+    {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img
+        {
+            width: 145px;
+        }
+    }
+}

@@ -16,7 +16,7 @@ body {
 
 .box-header {
   width: 90%;
-  height: 60px;
+  height: 40px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,24 +52,24 @@ body {
 }
 
 .box-header__logo img {
-  width: 200px;
+  width: 145px;
 }
 
 .box-menu {
   width: 100%;
   height: auto;
   background-color: #f7f7f7;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .box-menu__restaurants {
   width: 100%;
-  height: 400px;
+  height: 215px;
 }
 
 .box-menu__restaurants__photorestaurant {
   width: 100%;
-  height: 370px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -79,47 +79,33 @@ body {
 
 .box-menu__restaurants__infos {
   width: 100%;
-  height: 60px;
+  height: 50px;
   background-color: #f7f7f7;
   border-radius: 30px 30px 0px 0px;
   position: absolute;
   z-index: 1;
-  margin-top: 345px;
+  margin-top: 160px;
 }
 
 .box-menu__restaurants__infos__precisions {
   width: 90%;
-  height: 100px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .box-menu__restaurants__infos__precisions__title {
-  width: 30%;
+  width: 93%;
   font-family: "Shrikhand", cursive;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding-top: 25px;
   margin: 0px;
   margin-left: 5px;
 }
 
 .box-menu__restaurants__infos__precisions__icon {
-  width: 10%;
-  font-size: 1.5em;
+  width: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,18 +126,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 55px;
-  margin-bottom: 100px;
-  -webkit-animation: visible 1000ms;
-          animation: visible 1000ms;
+  -webkit-animation: visible 2000ms;
+          animation: visible 2000ms;
 }
 
 .box-menu__starter:nth-child(1), .box-menu__main:nth-child(1), .box-menu__dessert:nth-child(1) {
@@ -164,6 +147,11 @@ body {
           animation-delay: 2s;
 }
 
+.box-menu__starter:nth-child(3), .box-menu__main:nth-child(3), .box-menu__dessert:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
 .box-menu__starter__title, .box-menu__main__title, .box-menu__dessert__title {
   width: 30px;
   display: -webkit-box;
@@ -171,17 +159,16 @@ body {
   display: flex;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #595959;
   border-bottom: 2px solid #99E2D0;
   padding: 10px 0px 5px 0px;
   margin-left: 5px;
-  margin-right: 90%;
 }
 
 .box-menu__starter__para, .box-menu__main__para, .box-menu__dessert__para {
-  width: 30%;
-  height: 70px;
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,21 +176,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: white;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px #dddddd;
           box-shadow: 0px 0px 10px #dddddd;
+  line-height: 8px;
   margin-bottom: 10px;
 }
 
 .box-menu__starter__para strong, .box-menu__main__para strong, .box-menu__dessert__para strong {
-  font-size: 1em;
+  font-size: 0.8em;
   padding-left: 10px;
   margin-top: 10px;
 }
@@ -218,7 +206,7 @@ body {
 
 .box-menu__starter__para--size, .box-menu__main__para--size, .box-menu__dessert__para--size {
   width: 150px;
-  line-height: 15px;
+  line-height: 12px;
 }
 
 .box-menu__starter__para__precisions, .box-menu__main__para__precisions, .box-menu__dessert__para__precisions {
@@ -234,7 +222,7 @@ body {
 
 .box-menu__starter__para__precisions p, .box-menu__main__para__precisions p, .box-menu__dessert__para__precisions p {
   margin: 0px;
-  font-size: 0.8em;
+  font-size: 0.65em;
   color: #595959;
   width: 250px;
   line-height: 12px;
@@ -261,7 +249,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 0.8em;
+  font-size: 0.7em;
   margin: 0px 0px 10px 0px;
   padding-left: 0px;
 }
@@ -301,17 +289,16 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  font-size: 0.8em;
+  font-size: 0.7em;
   margin-top: 0px;
   margin-bottom: 10px;
   padding-bottom: 5px;
 }
 
 .box-menu__button {
-  width: 300px;
-  height: 80px;
+  width: 180px;
+  height: 40px;
   color: white;
-  margin: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
@@ -326,8 +313,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: bold;
-  font-size: 1em;
+  font-weight: 400;
+  margin-right: 10px;
+  text-align: center;
+  padding: 0px 10px;
   margin-top: 40px;
 }
 

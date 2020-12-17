@@ -14,44 +14,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.box-footer {
-  background-color: #353535;
-  color: white;
-  font-weight: 500;
-  font-size: 0.7em;
-}
-
-.box-footer__title {
-  width: 250px;
-  margin: auto;
-  padding-top: 20px;
-}
-
-.box-footer__list {
-  width: 250px;
-  height: 100px;
-  margin: auto;
-  list-style-type: none;
-  padding: 10px 0px;
-}
-
-.box-footer__list__li {
-  width: 270px;
-  line-height: 20px;
-}
-
-.box-footer__list__li a {
-  color: white;
-}
-
-.box-footer__list__icon {
-  margin-right: 15px;
-}
-
-.box-footer__list__iconhands {
-  margin-right: 10px;
-}
-
 .box-header {
   width: 90%;
   height: 40px;
@@ -171,6 +133,23 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-animation: visible 2000ms;
+          animation: visible 2000ms;
+}
+
+.box-menu__starter:nth-child(1), .box-menu__main:nth-child(1), .box-menu__dessert:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.box-menu__starter:nth-child(2), .box-menu__main:nth-child(2), .box-menu__dessert:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.box-menu__starter:nth-child(3), .box-menu__main:nth-child(3), .box-menu__dessert:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .box-menu__starter__title, .box-menu__main__title, .box-menu__dessert__title {
@@ -343,5 +322,67 @@ body {
   -webkit-box-shadow: 0px 5px 5px #9d9d9d;
           box-shadow: 0px 5px 5px #9d9d9d;
   opacity: 0.8;
+}
+
+@-webkit-keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box-footer {
+  background-color: #353535;
+  color: white;
+  font-weight: 500;
+  font-size: 0.7em;
+}
+
+.box-footer__title {
+  width: 250px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.box-footer__list {
+  width: 250px;
+  height: 100px;
+  margin: auto;
+  list-style-type: none;
+  padding: 10px 0px;
+}
+
+.box-footer__list__li {
+  width: 270px;
+  line-height: 20px;
+}
+
+.box-footer__list__li a {
+  color: white;
+}
+
+.box-footer__list__icon {
+  margin-right: 15px;
+}
+
+.box-footer__list__iconhands {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=menu.css.map */

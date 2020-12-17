@@ -1,34 +1,35 @@
 .box-footer
 {
-    height: auto;
     background-color: $background-color-secondary;
+    display: flex;
+    flex: wrap;
     color: white;
     font-weight: 500;
-    font-size: 0.7em;
 
     &__title
     {
-        width: 90%;
-        text-align: center;
-        font-size: 2.5em;
+        width: 250px;
         margin: auto;
         padding-top: 20px;
+        text-align: center;
+        font-size: 2em;
     }
 
     &__list
     {
-        width: 90%;
-        height: 50px;
-        margin: auto;
+        width: 250px;
+        height: 100px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin: auto;
         list-style-type: none;
-        font-size: 1.3em;
-        padding: 50px 0px;
+        padding: 10px 0px;
         
         &__li
         {
             width: 270px;
+            line-height: 20px;
             text-align: center;
             
             a
@@ -39,7 +40,7 @@
 
         &__icon
         {
-            margin-right: 10px;
+            margin-right: 15px;
         }
 
         &__iconhands

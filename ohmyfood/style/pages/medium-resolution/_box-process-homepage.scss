@@ -1,8 +1,8 @@
 .box-process /*counter initialized to 0 on this parent element*/
 {
+    width: 90%;
     height: 350px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
     counter-reset: listprocess;

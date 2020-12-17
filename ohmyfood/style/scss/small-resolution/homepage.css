@@ -25,6 +25,127 @@ h2 {
   font-family: "Shrikhand", cursive;
 }
 
+.body__loader {
+  width: 100%;
+  height: 1801px;
+  color: #9356DC;
+  background-color: #99E2D0;
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-transform: uppercase;
+  font-family: "Shrikhand", cursive;
+  -webkit-animation: opacity-loader 2800ms 2000ms forwards;
+          animation: opacity-loader 2800ms 2000ms forwards;
+}
+
+.body__loader__icon {
+  font-size: 20px;
+  margin-top: 150px;
+  margin-right: 20px;
+  color: #9356DC;
+  -webkit-animation: rotate 400ms infinite, hidden-text 2300ms 1700ms forwards;
+          animation: rotate 400ms infinite, hidden-text 2300ms 1700ms forwards;
+}
+
+.body__loader__para {
+  font-size: 20px;
+  margin-top: 150px;
+  border: none;
+  -webkit-animation: slide alternate infinite 700ms, hidden-text 2000ms 1900ms forwards;
+          animation: slide alternate infinite 700ms, hidden-text 2000ms 1900ms forwards;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    color: #9356DC;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    color: #FF79DA;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    color: #9356DC;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    color: #FF79DA;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    margin-right: 10%;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    margin-right: 10%;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
+
+@-webkit-keyframes opacity-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes opacity-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes hidden-text {
+  0% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 0px;
+  }
+}
+
+@keyframes hidden-text {
+  0% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 0px;
+  }
+}
+
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;

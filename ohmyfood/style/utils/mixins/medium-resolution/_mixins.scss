@@ -1,17 +1,18 @@
 @mixin button /*applicated on box explore button element*/
 {
-    width: 300px;
-    height: 80px;
+    width: 180px;
+    height: 40px;
     color:white;
-    margin: auto;
     background: linear-gradient($color-secondary, $color-primary);
     border-radius: 50px;
     box-shadow: 0px 5px 5px darken($background-color-primary, 12%);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
-    font-size: 1em;
+    font-weight: 400;
+    margin-right: 10px;
+    text-align: center;
+    padding: 0px 10px;
 
     &:hover
     {
@@ -23,17 +24,17 @@
 
 @mixin greysmallbox /*applicated on box process list element*/
 {
-    width: 300px;
-    height: 80px;
-    margin: 30px 50px;
+    width: 40%;
+    height: 50px;
+    margin: 0px auto;
     background-color: $background-color-primary;
     border-radius: 15px;
     box-shadow: 0px 5px 8px darken($background-color-primary, 8%);
+    margin-bottom: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     font-weight: 500;
-    font-size: 1.3em;
 
     &:hover /*lighten purple color applicated on hovering of background box process list element*/
     {
@@ -61,7 +62,7 @@
 @mixin largebox /*applicated on each box restaurants elements*/
 {
     width: 250px;
-    height: 250px;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #F2F2F2;
     background-color: white;
@@ -92,12 +93,12 @@
     height: 20px;
     position: relative;
     left: 170px;
-    bottom: 170px;
+    bottom: 150px;
     border: 1px solid $color-tertiary;
     border-radius: 2px;
     padding: 1px 10px;
     background-color: $color-tertiary;
-    color: #139273;
+    color: #008766;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -105,15 +106,16 @@
 
 @mixin whitesmallbox /*applicated on each box starter main and dessert menu elements*/
 {
-    width: 30%;
-    height: 70px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px darken($background-color-primary, 10%);
+    line-height: 8px;
     margin-bottom: 10px;
 }
 

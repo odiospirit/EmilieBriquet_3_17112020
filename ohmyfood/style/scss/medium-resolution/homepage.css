@@ -27,7 +27,7 @@ h2 {
 
 .body__loader {
   width: 100%;
-  height: 1571px;
+  height: 1801px;
   color: #9356DC;
   background-color: #99E2D0;
   position: absolute;
@@ -48,19 +48,20 @@ h2 {
 }
 
 .body__loader__icon {
-  font-size: 100px;
+  font-size: 60px;
   margin-top: 150px;
-  margin-right: 40px;
+  margin-right: 20px;
   color: #9356DC;
-  -webkit-animation: rotate 400ms infinite, hidden-text 2000ms 1000ms forwards;
-          animation: rotate 400ms infinite, hidden-text 2000ms 1000ms forwards;
+  -webkit-animation: rotate 400ms infinite, hidden-text 2300ms 1700ms forwards;
+          animation: rotate 400ms infinite, hidden-text 2300ms 1700ms forwards;
 }
 
 .body__loader__para {
-  font-size: 100px;
+  font-size: 60px;
   margin-top: 150px;
-  -webkit-animation: slide alternate infinite 700ms, hidden-text 2000ms 1200ms forwards;
-          animation: slide alternate infinite 700ms, hidden-text 2000ms 1200ms forwards;
+  border: none;
+  -webkit-animation: slide alternate infinite 700ms, hidden-text 2000ms 1900ms forwards;
+          animation: slide alternate infinite 700ms, hidden-text 2000ms 1900ms forwards;
 }
 
 @-webkit-keyframes rotate {
@@ -129,7 +130,7 @@ h2 {
 
 @-webkit-keyframes hidden-text {
   0% {
-    font-size: 100px;
+    font-size: 60px;
   }
   100% {
     font-size: 0px;
@@ -138,7 +139,7 @@ h2 {
 
 @keyframes hidden-text {
   0% {
-    font-size: 100px;
+    font-size: 60px;
   }
   100% {
     font-size: 0px;
@@ -167,7 +168,7 @@ body {
 }
 
 .box-header__logo {
-  width: 40%;
+  width: 50%;
 }
 
 .box-header__research {
@@ -218,55 +219,43 @@ body {
 }
 
 .box-explore {
-  height: 300px;
-  background-color: #f6f6f6;
+  height: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f6f6f6;
 }
 
 .box-explore__description {
-  width: 67%;
-  height: 100%;
   background-color: #f6f6f6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 .box-explore__description__title {
-  width: 32%;
-  color: #4d4d4d;
+  width: 100%;
   text-align: center;
   margin: auto;
-  font-size: 1em;
 }
 
 .box-explore__description__para {
-  width: 35%;
-  margin: auto;
+  width: 100%;
+  margin: 10px auto;
   text-align: center;
   color: #4d4d4d;
-  font-weight: bold;
-  font-size: 1em;
+  font-weight: 400;
 }
 
 .box-explore__button {
-  width: 300px;
-  height: 80px;
+  width: 180px;
+  height: 40px;
   color: white;
-  margin: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
@@ -281,8 +270,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: bold;
-  font-size: 1em;
+  font-weight: 400;
+  margin-right: 10px;
+  text-align: center;
+  padding: 0px 10px;
 }
 
 .box-explore__button:hover {
@@ -296,9 +287,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 30px;
@@ -314,13 +302,14 @@ body {
 }
 
 .box-process__list {
-  width: 300px;
-  height: 80px;
-  margin: 30px 50px;
+  width: 250px;
+  height: 50px;
+  margin: auto;
   background-color: #f6f6f6;
   border-radius: 15px;
   -webkit-box-shadow: 0px 5px 8px #e2e2e2;
           box-shadow: 0px 5px 8px #e2e2e2;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +320,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 1.3em;
 }
 
 .box-process__list:hover {
@@ -382,7 +370,7 @@ body {
 
 .box-restaurants__lapalettedugout, .box-restaurants__lanoteenchantee, .box-restaurants__alafrancaise, .box-restaurants__ledelicedessens {
   width: 250px;
-  height: 250px;
+  height: 200px;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 10px #F2F2F2;
           box-shadow: 2px 2px 10px #F2F2F2;
@@ -410,12 +398,12 @@ body {
   height: 20px;
   position: relative;
   left: 170px;
-  bottom: 170px;
+  bottom: 150px;
   border: 1px solid #99E2D0;
   border-radius: 2px;
   padding: 1px 10px;
   background-color: #99E2D0;
-  color: #139273;
+  color: #008766;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,35 +499,20 @@ body {
 
 .box-footer {
   background-color: #353535;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   color: white;
   font-weight: 500;
+  font-size: 0.7em;
 }
 
 .box-footer__title {
-  width: 100%;
+  width: 250px;
   margin: auto;
   padding-top: 20px;
-  text-align: center;
-  font-size: 2em;
 }
 
 .box-footer__list {
-  width: 100%;
+  width: 250px;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: auto;
   list-style-type: none;
   padding: 10px 0px;
@@ -548,7 +521,6 @@ body {
 .box-footer__list__li {
   width: 270px;
   line-height: 20px;
-  text-align: center;
 }
 
 .box-footer__list__li a {
