@@ -1,12 +1,15 @@
-@import "../../base/fonts";
-@import "../../utils/variables/variables";
-@import "../../utils/mixins/small-resolution/mixins";
-@import "../../layouts/a";
-@import "../../layouts/h2";
-@import "../../layouts/body";
-@import "../../pages/small-resolution/_box-header-menu";
-@import "../../pages/small-resolution/box-menu-menu";
-@import "../../layouts/footer";
+@import "../base/fonts";
+
+@import "../utils/variables/variables";
+@import "../utils/mixins/small-resolution/mixins";
+
+@import "../layouts/a";
+@import "../layouts/h2";
+@import "../layouts/body";
+
+@import "../pages/small-resolution/_box-header-menu";
+@import "../pages/small-resolution/box-menu-menu";
+@import "../pages/small-resolution/footer";
 
 
 

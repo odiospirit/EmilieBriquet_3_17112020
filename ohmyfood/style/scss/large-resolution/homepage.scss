@@ -1,17 +1,20 @@
-@import "../../base/fonts";
-@import "../../utils/variables/variables";
-@import "../../utils/mixins/large-resolution/mixins";
-@import "../../layouts/p";
-@import "../../layouts/a";
-@import "../../layouts/strong";
-@import "../../layouts/span";
-@import "../../layouts/h1";
-@import "../../layouts/h2";
-@import "../../pages/large-resolution/loader";
-@import "../../layouts/body";
-@import "../../pages/large-resolution/box-header-homepage";
-@import "../../pages/large-resolution/box-explore-homepage";
-@import "../../pages/large-resolution/box-process-homepage";
-@import "../../pages/large-resolution/box-restaurants-homepage";
-@import "../../pages/large-resolution/footer";
+@import "../base/fonts";
+
+@import "../utils/variables/variables";
+@import "../utils/mixins/large-resolution/mixins";
+
+@import "../layouts/p";
+@import "../layouts/a";
+@import "../layouts/strong";
+@import "../layouts/span";
+@import "../layouts/h1";
+@import "../layouts/h2";
+@import "../layouts/body";
+
+@import "../pages/large-resolution/loader";
+@import "../pages/large-resolution/box-header-homepage";
+@import "../pages/large-resolution/box-explore-homepage";
+@import "../pages/large-resolution/box-process-homepage";
+@import "../pages/large-resolution/box-restaurants-homepage";
+@import "../pages/large-resolution/footer";
 

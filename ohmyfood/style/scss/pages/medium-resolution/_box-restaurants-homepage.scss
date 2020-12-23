@@ -1,0 +1,107 @@
+.box-restaurants
+{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $background-color-primary;
+    padding-bottom: 50px;
+
+    &__title
+    {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    &__lapalettedugout, &__lanoteenchantee, &__alafrancaise, &__ledelicedessens
+    {
+        @include largebox;
+
+        &__image
+        {
+            @include boximage;
+
+            &__photo
+            {
+                @include boxphoto;
+            }
+
+            &__newbutton
+            {
+                @include newbutton;
+            }
+        }
+
+        &__para
+        {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__description
+            {
+                display: flex;
+                flex-direction: column;
+                line-height: 20px;
+                font-size: 1em;
+                
+            }
+
+            &__icon
+            {
+                width: 10%;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                color: 1f1f1f;
+
+                &:hover
+                {
+                    .box-restaurants__lapalettedugout__para__icon__heartempty, .box-restaurants__lanoteenchantee__para__icon__heartempty, .box-restaurants__alafrancaise__para__icon__heartempty, .box-restaurants__ledelicedessens__para__icon__heartempty
+                    {
+                        visibility: hidden;
+                        color: transparent;
+                        background: linear-gradient($color-primary, $color-secondary);
+                        -webkit-background-clip: text;
+                    }
+
+                    .box-restaurants__lapalettedugout__para__icon__heartfull, .box-restaurants__lanoteenchantee__para__icon__heartfull, .box-restaurants__alafrancaise__para__icon__heartfull, .box-restaurants__ledelicedessens__para__icon__heartfull
+                    {
+                        visibility: visible;
+                        color: transparent;
+                        background: linear-gradient($color-primary, $color-secondary);
+                        -webkit-background-clip: text;
+                    }
+
+                }
+
+                &__heartempty
+                {
+                    width: 18px;
+                    color: #606060;
+                    position: absolute;
+                    transition: all ease-in 500ms;
+                }
+
+                &__heartfull
+                {
+                    visibility: hidden;
+                    width: 18px;
+                    color: white;
+                    transition: all ease-in 800ms;
+                }
+
+            }
+                
+        }
+
+    }
+
+}
+

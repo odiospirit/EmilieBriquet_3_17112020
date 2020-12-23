@@ -1,0 +1,54 @@
+.box-footer
+{
+    background-color: $background-color-secondary;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-weight: 500;
+
+    &__title
+    {
+        width: 100%;
+        margin: auto;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    &__list
+    {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        list-style-type: none;
+        padding: 10px 0px;
+        font-size: 1.3em;
+        
+        &__li
+        {
+            width: 270px;
+            line-height: 20px;
+            text-align: center;
+            
+            a
+            {
+                color: white;
+            }
+        }
+
+        &__icon
+        {
+            margin-right: 15px;
+        }
+
+        &__iconhands
+        {
+            margin-right: 10px;
+        }
+
+    }
+
+}

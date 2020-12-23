@@ -1,0 +1,75 @@
+.body__loader
+{
+    width: 100%;
+    height: 1801px;
+    color: $color-primary;
+    background-color: $color-tertiary;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    font-family: $font-family-secondary;
+    animation: opacity-loader 2800ms 2000ms forwards;
+
+
+    &__icon
+    {
+        font-size: 20px;
+        margin-top: 150px;
+        margin-right: 20px;
+        color: $color-primary;
+        animation: rotate 300ms infinite forwards, hidden-text 2300ms 1700ms forwards;
+    }
+
+    &__para
+    {
+        font-size: 20px;
+        margin-top: 150px;
+        border: none;
+        animation: slide alternate infinite 700ms, hidden-text 2000ms 1900ms forwards;
+    }
+    
+}
+
+@keyframes rotate
+{
+    0%
+    {
+        transform: rotate(90deg);
+        color: $color-primary;
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+        color: $color-secondary;
+    }
+
+}
+
+
+@keyframes opacity-loader
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+
+@keyframes hidden-text
+{
+    100%
+    {
+        transform: scale(0);
+        visibility: hidden;
+    }
+}

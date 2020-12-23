@@ -1,0 +1,50 @@
+.box-header
+{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__logo
+    {
+        width: 450px;
+    }
+
+    &__research
+    {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        font-size: 25px;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__icon
+        {
+            width: 15%;
+            font-size: 1.2em;
+        }
+
+        &__input
+        {
+            width: 180px;
+            height: 50%;
+            font-size: 1em;
+            font-weight: 500;
+            border: none;
+
+            &::placeholder
+            {
+                color: #353535;
+            }
+
+            &:focus
+            {
+                outline-style: none;
+            }
+        }
+    }
+}

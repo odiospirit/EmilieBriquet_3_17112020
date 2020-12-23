@@ -1,0 +1,53 @@
+.box-footer
+{
+    background-color: $background-color-secondary;
+    display: flex;
+    flex: wrap;
+    color: white;
+    font-weight: 500;
+
+    &__title
+    {
+        width: 250px;
+        margin: auto;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    &__list
+    {
+        width: 250px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        list-style-type: none;
+        padding: 10px 0px;
+        
+        &__li
+        {
+            width: 270px;
+            line-height: 25px;
+            text-align: center;
+            
+            a
+            {
+                color: white;
+            }
+        }
+
+        &__icon
+        {
+            margin-right: 15px;
+        }
+
+        &__iconhands
+        {
+            margin-right: 10px;
+        }
+
+    }
+
+}

@@ -5,18 +5,10 @@
   "main": "index.js",
   "scripts": 
   {
-    "sass-small-homepage": "sass --watch ../style/scss/small-resolution/homepage.scss:../style/scss/small-resolution/homepage.css", 
-    "sass-small-menu": "sass --watch ../style/scss/small-resolution/menu.scss:../style/scss/small-resolution/menu.css",
-    "sass-medium-homepage": "sass --watch ../style/scss/medium-resolution/homepage.scss:../style/scss/medium-resolution/homepage.css", 
-    "sass-medium-menu": "sass --watch ../style/scss/medium-resolution/menu.scss:../style/scss/medium-resolution/menu.css",
-    "sass-large-homepage": "sass --watch ../style/scss/large-resolution/homepage.scss:../style/scss/large-resolution/homepage.css", 
-    "sass-large-menu": "sass --watch ../style/scss/large-resolution/menu.scss:../style/scss/large-resolution/menu.css",
-    "prefix-small-homepage": "postcss ../style/scss/small-resolution/homepage.css --use autoprefixer -d ../style/scss/prefixed",
-    "prefix-small-menu": "postcss ../style/scss/small-resolution/menu.css --use autoprefixer -d ../style/scss/prefixed",
-    "prefix-medium-homepage": "postcss ../style/scss/medium-resolution/homepage.css --use autoprefixer -d ../style/scss/prefixed",
-    "prefix-medium-menu": "postcss ../style/scss/medium-resolution/menu.css --use autoprefixer -d ../style/scss/prefixed",
-    "prefix-large-homepage": "postcss ../style/scss/large-resolution/homepage.css --use autoprefixer -d ../style/scss/prefixed",
-    "prefix-large-menu": "postcss ../style/scss/large-resolution/menu.css --use autoprefixer -d ../style/scss/prefixed"
+    "sass" : "sass --no-source-map ./style/scss:./style/css",
+    "prefix": "postcss ./style/css/base --use autoprefixer -d ./style/css/base | postcss ./style/css/large-resolution --use autoprefixer -d ./style/css/large-resolution | postcss ./style/css/medium-resolution --use autoprefixer -d ./style/css/medium-resolution | postcss ./style/css/small-resolution --use autoprefixer -d ./style/css/small-resolution",
+    "build": "npm run sass && npm run prefix",
+    "watch": "sass --no-source-map --watch ./style/scss:./style/css"
   },
   "repository": {
     "type": "git",
@@ -24,7 +16,7 @@
   },
   "author": "",
   "license": "ISC",
-  "browserlist": "last 4 versions",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/odiospirit/ohmyfood/issues"
   },
