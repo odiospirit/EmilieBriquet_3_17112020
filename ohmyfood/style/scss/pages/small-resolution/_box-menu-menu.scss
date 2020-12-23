@@ -65,6 +65,7 @@
         width: 100%;
         height: auto;
         position: absolute;
+        z-index:1;
 
         &__starter, &__main, &__dessert
         {
@@ -93,12 +94,13 @@
                 
             {
                 @include whitesmallbox;
-                transition: width ease-in 800ms;
+                transition: width 800ms;
                 
     
                 &:hover
                 {
-                    width: 320px;
+                    width: 85%;
+                    border-radius: 10px 0px 0px 10px;
 
                     p 
                     {
@@ -111,10 +113,6 @@
                         height: 24px;
                     }
 
-                    .box-menu__secondary__starter__checked__icon, .box-menu__secondary__main__checked__icon, .box-menu__secondary__dessert__checked__icon
-                    {
-                        color:red;
-                    }
                 }
     
     
@@ -217,6 +215,14 @@
                 margin-bottom: 10px;
                 padding-right: 18px;
 
+                &:hover
+                {
+                    .box-menu__secondary__starter__checked__icon
+                    {
+                        color: red;
+                    }
+                }
+
                 &--width
                 {
                     width: 95%;
@@ -233,7 +239,7 @@
                 &__icon
                 {
                     color: white;
-                    /*transition: color 300ms;*/
+                    transition : color 800ms;
                 }
 
             }
@@ -254,20 +260,44 @@
 
 
 
-.box-menu__principal__starter, .box-menu__secondary__starter
+.box-menu__principal__starter
 {
-    animation: visible 1000ms 0.4s;
+    animation: visible 1000ms 0.4s forwards;
+    visibility: hidden;
 }
 
-.box-menu__principal__main, .box-menu__secondary__main
+.box-menu__principal__main
 {
-    animation: visible 1000ms 0.7s;
+    animation: visible 1000ms 0.7s forwards;
+    visibility: hidden;
 }
 
-.box-menu__principal__dessert, .box-menu__secondary__dessert
+.box-menu__principal__dessert
 { 
-    animation: visible 1000ms 1s;
+    animation: visible 1000ms 1s forwards;
+    visibility: hidden;
 }
+
+.box-menu__secondary__starter
+{
+    animation: visible 1000ms 0.4s forwards;
+    visibility: hidden;
+}
+
+.box-menu__secondary__main
+{
+    animation: visible 1000ms 0.4s forwards;
+    visibility: hidden;
+}
+
+.box-menu__secondary__dessert
+{
+    animation: visible 1000ms 0.4s forwards;
+    visibility: hidden;
+}
+
+
+
 
 
  
