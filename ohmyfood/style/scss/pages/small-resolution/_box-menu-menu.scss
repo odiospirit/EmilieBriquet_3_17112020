@@ -96,16 +96,10 @@
                 width: 85%;
                 animation: round 800ms both;
 
-                p 
+                p, strong
                 {
                     animation: ellipse 400ms both;
                     animation-direction: alternate;
-                }
-
-                .box-menu__main__para__precisions--width
-                {
-                    width: 152px;
-                    height: 24px;
                 }
 
                 .fa-check-circle
@@ -123,19 +117,9 @@
                 margin-top: 10px;
             }
     
-            &--hidden
-            {
-                width: 142px;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-                padding: 2px 0px;
-            }
-    
             &--size
             {
-                width: 150px;
-                line-height: 12px;
+                max-width: 170px;
             }
     
     
@@ -144,7 +128,7 @@
                 width: 90%;
                 display: flex;
                 justify-content: space-between;
-                margin: 6px 0px 0px 0px;
+                margin: 3px 0px 0px 0px;
     
                 p
                 {
@@ -161,11 +145,7 @@
                 {
                     max-width: 170px;
                 }
-    
-                &--lineheight
-                {
-                    padding-top: 3px;
-                }
+
     
                 strong
                 {
@@ -197,7 +177,7 @@
                 &--width
                 {
                     width: 85%;
-                    height: 58px;
+                    height: 49px;
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
@@ -283,7 +263,7 @@
 
     50%
     {
-        width: 80%;
+        width: 60%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -291,7 +271,7 @@
 
     100%
     {
-        width: 60%;
+        width: 48%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
