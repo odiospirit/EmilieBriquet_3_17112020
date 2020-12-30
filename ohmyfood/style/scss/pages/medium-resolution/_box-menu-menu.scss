@@ -1,4 +1,4 @@
-.box-menu
+.main-section
 {
     width: 100%;
     height: auto;
@@ -33,7 +33,7 @@
             z-index: 1;
             margin-top: 160px;
 
-            &__precisions
+            &__description
             {
                 width: 90%;
                 margin: auto;
@@ -66,7 +66,7 @@
     }
 
 
-    &__starter, &__main, &__dessert
+    &__menu
     {
         width: 60%;
         height: auto;
@@ -74,132 +74,129 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
 
-        &__title
+        &__box
         {
-            width: 30px;
-            display: flex;
-            text-transform: uppercase;
-            font-weight: 400;
-            font-size: 0.8em;
-            color: darken(#F2F2F2, 60%);
-            border-bottom: 2px solid $color-tertiary;
-            padding: 10px 0px 5px 0px;
-            margin-left: 5px;
-        }
 
-        &__para
-        {
-            @include whitesmallbox;
-            transition: width 800ms;
+            width: 100%;
 
-            &:hover
+            &__title
             {
-                width: 85%;
-                animation: round 800ms both;
-
-                p, strong
-                {
-                    animation: ellipse 400ms both;
-                    animation-direction: alternate;
-                }
-
-                .fa-check-circle
-                {
-                    transform: rotate(360deg);
-                }
-
-            }
-
-            strong
-            {
+                width: 30px;
+                display: flex;
+                text-transform: uppercase;
+                font-weight: 400;
                 font-size: 0.8em;
-                padding-left: 10px;
-                margin-top: 10px;
-            }
+                color: darken(#F2F2F2, 60%);
+                border-bottom: 2px solid $color-tertiary;
+                padding: 10px 0px 5px 0px;
+                margin-left: 5px;
+            }   
 
-            &--size
+            &__line
             {
-                max-width: 200px;
-            }
 
-
-            &__precisions
-            {
-                width: 90%;
+                width:100%;
                 display: flex;
-                justify-content: space-between;
-                margin: 3px 0px 0px 0px;
 
-                p
+                &:hover
                 {
-                    margin: 0px;
-                    font-size: 0.65em;
-                    color: darken(#F2F2F2, 60%);
-                    width: 250px;
-                    line-height: 12px;
-                    padding-left: 10px;
-                    margin-bottom: 10px;
+                    .main-section__menu__box__line__box
+                    {
+                        width: 76%;
+                        animation: round 800ms both;
+                    
+                        p
+                        {
+                            white-space: nowrap;
+                        }
+
+                        .main-section__menu__box__line__box__description 
+                        {
+                            strong
+                            {
+                                width: 36%;
+                            }
+                        }
+
+                    }
+
+                    .main-section__menu__box__line__checked__icon
+                    {
+                        transform: rotate(360deg);
+                    }
+
                 }
 
-                &--width
+                &__box 
                 {
-                    max-width: 200px;
+                    @include whitesmallbox;
+                    transition: width 800ms;
+
+                    strong
+                    {   
+                        font-size: 0.8em;
+                        padding-left: 10px;
+                        margin-top: 10px;
+                    }
+
+                    &__description
+                    {
+                        width: 90%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 3px 0px 0px 0px;
+
+                        p
+                        {
+                            margin: 0px;
+                            font-size: 0.65em;
+                            color: darken(#F2F2F2, 60%);
+                            width: 250px;
+                            line-height: 12px;
+                            padding-left: 10px;
+                            margin-bottom: 10px;
+                        }
+
+                        strong
+                        {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                            font-size: 0.7em;
+                            margin: 0px 0px 10px 0px;
+                            padding-left: 0px;
+                        } 
+
+                    }
+            
                 }
-
-                strong
-                {
-                    min-width: 10%;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: flex-end;
-                    font-size: 0.7em;
-                    margin: 0px 0px 10px 0px;
-                    padding-left: 0px;
-                } 
-
-            }
                 
-            &__checked
-            {
-                width: 57%;
-                height: 48px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                background-color: $color-tertiary;
-                border-radius: 10px;
-                padding-right: 18px;
-                position: absolute;
-                z-index: -1;
-
-
-                &--width
+                &__checked
                 {
-                    width: 57%;
-                    height: 49px;
+                    width: 15%;
+                    height: 48px;
                     display: flex;
-                    justify-content: flex-end;
+                    justify-content: center;
                     align-items: center;
                     background-color: $color-tertiary;
-                    border-radius: 10px;
-                    padding-right: 18px;
+                    border-radius: 0px 10px 10px 0px;
                     position: absolute;
-                    z-index: -1;
-                }
+                    margin-left: 45%;
 
-                &__icon
-                {
-                    color: white;
-                    transition : transform 800ms;
+                    &__icon
+                    {
+                        color: white;
+                        transition : transform 800ms;
+                    }
+
                 }
 
             }
 
         }
 
-    }
+    }   
     
 
     &__button
@@ -207,25 +204,29 @@
         @include button;
         margin-top: 40px;
     }
+
 }
 
 
-.box-menu__starter
+.main-section__menu__box
 {
-    animation: visible 1000ms 0.4s forwards;
-    visibility: hidden;
-}
+    &.first-animation 
+    {
+        animation: visible 1000ms 0.4s forwards;
+        visibility: hidden;
+    }
 
-.box-menu__main
-{
-    animation: visible 1000ms 0.7s forwards;
-    visibility: hidden;
-}
+    &.second-animation 
+    {
+        animation: visible 1000ms 0.7s forwards;
+        visibility: hidden;
+    }
 
-.box-menu__dessert
-{ 
-    animation: visible 1000ms 1s forwards;
-    visibility: hidden;
+    &.third-animation 
+    {
+        animation: visible 1000ms 1s forwards;
+        visibility: hidden;
+    }
 }
 
 
@@ -234,6 +235,7 @@
     0%
     {
         opacity: 0;
+        visibility: hidden;
     }
 
     50%
@@ -250,31 +252,6 @@
 }
 
 
-
-@keyframes ellipse
-{
-    0%
-    {
-        width: 100%;
-    }
-
-    50%
-    {
-        width: 60%;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-
-    100%
-    {
-        width: 48%;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-}
-
 @keyframes round
 {
     0%
@@ -287,6 +264,3 @@
         border-radius: 10px 0px 0px 10px;
     }
 }
-
-
-
