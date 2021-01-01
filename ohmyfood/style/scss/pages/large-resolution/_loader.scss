@@ -1,4 +1,4 @@
-.body__loader
+.body-loader
 {
     width: 100%;
     height: 1496px;
@@ -13,14 +13,23 @@
     font-family: $font-family-secondary;
     animation: opacity-loader 2800ms 2000ms forwards;
 
-
-    &__icon
+    &__box
     {
-        font-size: 100px;
+        width: 150px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 150px;
-        margin-right: 40px;
-        color: $color-primary;
-        animation: rotate 300ms infinite forwards, hidden-text 2000ms 1000ms forwards;
+        animation: opacity-loader 2000ms 700ms forwards;
+
+        &__icon
+        {
+            font-size: 100px;
+            color: $color-primary;
+            animation: rotate 300ms infinite;
+        }
+
     }
 
     &__para
@@ -31,6 +40,9 @@
     }
     
 }
+
+
+
 
 @keyframes rotate
 {

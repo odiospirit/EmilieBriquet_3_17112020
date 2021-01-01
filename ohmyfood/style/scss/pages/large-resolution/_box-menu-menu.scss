@@ -98,27 +98,15 @@
 
                 width:100%;
                 display: flex;
+                position: relative;
+                margin-bottom: 10px;
 
                 &:hover
                 {
                     .main-section__menu__box__line__box
                     {
-                        width: 76%;
-                        animation: round 800ms both;
-                    
-                        p
-                        {
-                            white-space: nowrap;
-                        }
-
-                        .main-section__menu__box__line__box__description 
-                        {
-                            strong
-                            {
-                                width: 36%;
-                            }
-                        }
-
+                        width: 85%;
+                        border-radius: 10px 0px 0px 10px;
                     }
 
                     .main-section__menu__box__line__checked__icon
@@ -131,7 +119,7 @@
                 &__box 
                 {
                     @include whitesmallbox;
-                    transition: width 800ms;
+                    transition: width 800ms, border-radius 800ms;
 
                     strong
                     {   
@@ -182,7 +170,7 @@
                     background-color: $color-tertiary;
                     border-radius: 0px 10px 10px 0px;
                     position: absolute;
-                    margin-left: 45%;
+                    right: 0;
 
                     &__icon
                     {
@@ -230,6 +218,8 @@
 }
 
 
+
+
 @keyframes visible
 {
     0%
@@ -248,19 +238,5 @@
     {
         opacity: 1;
         visibility: visible;
-    }
-}
-
-
-@keyframes round
-{
-    0%
-    {
-        border-radius: 10px 10px 10px 10px;
-    }
-
-    100%
-    {
-        border-radius: 10px 0px 0px 10px;
     }
 }

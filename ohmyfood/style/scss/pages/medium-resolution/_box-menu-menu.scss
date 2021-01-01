@@ -98,25 +98,36 @@
 
                 width:100%;
                 display: flex;
+                position: relative;
+                margin-bottom: 10px;
 
                 &:hover
                 {
                     .main-section__menu__box__line__box
                     {
-                        width: 76%;
-                        animation: round 800ms both;
-                    
-                        p
+                        width: 85%;
+                        border-radius: 10px 0px 0px 10px;
+
+                        strong
                         {
+                            width: 60%;
                             white-space: nowrap;
                         }
 
                         .main-section__menu__box__line__box__description 
                         {
+
+                            p
+                            {
+                                width: 80%;
+                                white-space: nowrap;
+                            }
+
                             strong
                             {
-                                width: 36%;
+                                width: 25%;
                             }
+
                         }
 
                     }
@@ -131,31 +142,40 @@
                 &__box 
                 {
                     @include whitesmallbox;
-                    transition: width 800ms;
+                    transition: width 600ms, border-radius 600ms;
 
                     strong
                     {   
+                        width: 90%;
                         font-size: 0.8em;
                         padding-left: 10px;
                         margin-top: 10px;
+                        /*white-space: nowrap; (just with white space: nowrap, the transition ellipsis in return, run*/
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        transition: width ease-in 600ms;  
                     }
 
                     &__description
                     {
-                        width: 90%;
+                        width: 95%;
                         display: flex;
                         justify-content: space-between;
                         margin: 3px 0px 0px 0px;
 
                         p
                         {
+                            width: 90%;
                             margin: 0px;
                             font-size: 0.65em;
                             color: darken(#F2F2F2, 60%);
-                            width: 250px;
                             line-height: 12px;
                             padding-left: 10px;
                             margin-bottom: 10px;
+                            /*white-space: nowrap; (just with white space: nowrap, the transition ellipsis in return, run*/  
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            transition: width ease-in 600ms;
                         }
 
                         strong
@@ -175,14 +195,14 @@
                 &__checked
                 {
                     width: 15%;
-                    height: 48px;
+                    height: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     background-color: $color-tertiary;
                     border-radius: 0px 10px 10px 0px;
                     position: absolute;
-                    margin-left: 45%;
+                    right: 0;
 
                     &__icon
                     {
@@ -230,6 +250,8 @@
 }
 
 
+
+
 @keyframes visible
 {
     0%
@@ -248,19 +270,5 @@
     {
         opacity: 1;
         visibility: visible;
-    }
-}
-
-
-@keyframes round
-{
-    0%
-    {
-        border-radius: 10px 10px 10px 10px;
-    }
-
-    100%
-    {
-        border-radius: 10px 0px 0px 10px;
     }
 }
