@@ -135,18 +135,18 @@
                 &__box 
                 {
                     @include whitesmallbox;
-                    transition: width ease-in 400ms, border-radius ease-in 400ms;
-    
+                    transition: width ease-in 500ms, border-radius ease-in 500ms;
+                    
                     strong
                     {
-                        width: 30%;
+                        max-width: 199px;
                         font-size: 0.8em;
                         padding-left: 10px;
                         margin-top: 10px;
                         /*white-space: nowrap; (just with white space: nowrap, the transition ellipsis in return, run*/
                         overflow: hidden;
                         text-overflow: ellipsis;
-                        transition: width ease-in 600ms;                    
+                        transition: width ease-in 1000ms;                    
                     }
         
                     &__description
@@ -179,7 +179,6 @@
                             align-items: flex-end;
                             font-size: 0.7em;
                             margin: 0px 0px 10px 0px;
-                            padding-left: 0px;
                         }
 
                     }
